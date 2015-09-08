@@ -1,0 +1,2431 @@
+2015-08-13 00:04:29	INFO:	Opened connection at 2015-08-13 00:04:29 +02:00
+
+2015-08-13 00:04:29	INFO:	
+SELECT Count(*)
+FROM INFORMATION_SCHEMA.TABLES AS t
+WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Games','dbo.ApplicationUsers','dbo.IdentityUserClaims','dbo.LanguageApplicationUsers','dbo.Languages','dbo.GameLanguages','dbo.GameVersions','dbo.GamePhraseVersions','dbo.GamePhrases','dbo.GameVersionTrees','dbo.TranslationPhrases','dbo.Translations','dbo.TranslationUsers','dbo.TranslationPackSenders','dbo.IdentityUserLogins','dbo.IdentityUserRoles','dbo.IdentityRoles','dbo.TranslationTreeCounters')
+    OR t.TABLE_NAME = 'EdmMetadata'
+2015-08-13 00:04:29	INFO:	
+
+2015-08-13 00:04:29	INFO:	-- Executing at 2015-08-13 00:04:29 +02:00
+
+2015-08-13 00:04:29	INFO:	-- Completed in 2 ms with result: 18
+
+2015-08-13 00:04:29	INFO:	
+
+2015-08-13 00:04:29	INFO:	Closed connection at 2015-08-13 00:04:29 +02:00
+
+2015-08-13 00:04:30	INFO:	Opened connection at 2015-08-13 00:04:30 +02:00
+
+2015-08-13 00:04:31	INFO:	SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [GroupBy1]
+2015-08-13 00:04:31	INFO:	
+
+2015-08-13 00:04:31	INFO:	-- p__linq__0: 'Translator.Models.ApplicationDbContext' (Type = String, Size = 4000)
+
+2015-08-13 00:04:31	INFO:	-- Executing at 2015-08-13 00:04:31 +02:00
+
+2015-08-13 00:04:31	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:31	INFO:	
+
+2015-08-13 00:04:31	INFO:	Closed connection at 2015-08-13 00:04:31 +02:00
+
+2015-08-13 00:04:31	INFO:	Opened connection at 2015-08-13 00:04:31 +02:00
+
+2015-08-13 00:04:31	INFO:	SELECT TOP (1) 
+    [Project1].[C1] AS [C1], 
+    [Project1].[MigrationId] AS [MigrationId], 
+    [Project1].[Model] AS [Model], 
+    [Project1].[ProductVersion] AS [ProductVersion]
+    FROM ( SELECT 
+        [Extent1].[MigrationId] AS [MigrationId], 
+        [Extent1].[Model] AS [Model], 
+        [Extent1].[ProductVersion] AS [ProductVersion], 
+        1 AS [C1]
+        FROM [dbo].[__MigrationHistory] AS [Extent1]
+        WHERE [Extent1].[ContextKey] = @p__linq__0
+    )  AS [Project1]
+    ORDER BY [Project1].[MigrationId] DESC
+2015-08-13 00:04:31	INFO:	
+
+2015-08-13 00:04:31	INFO:	-- p__linq__0: 'Translator.Models.ApplicationDbContext' (Type = String, Size = 4000)
+
+2015-08-13 00:04:31	INFO:	-- Executing at 2015-08-13 00:04:31 +02:00
+
+2015-08-13 00:04:31	INFO:	-- Completed in 5 ms with result: SqlDataReader
+
+2015-08-13 00:04:31	INFO:	
+
+2015-08-13 00:04:31	INFO:	Closed connection at 2015-08-13 00:04:31 +02:00
+
+2015-08-13 00:04:31	INFO:	Opened connection asynchronously at 2015-08-13 00:04:31 +02:00
+
+2015-08-13 00:04:32	INFO:	SELECT 
+    [UnionAll2].[C2] AS [C1], 
+    [UnionAll2].[C3] AS [C2], 
+    [UnionAll2].[C4] AS [C3], 
+    [UnionAll2].[C5] AS [C4], 
+    [UnionAll2].[C6] AS [C5], 
+    [UnionAll2].[C7] AS [C6], 
+    [UnionAll2].[C8] AS [C7], 
+    [UnionAll2].[C9] AS [C8], 
+    [UnionAll2].[C10] AS [C9], 
+    [UnionAll2].[C11] AS [C10], 
+    [UnionAll2].[C12] AS [C11], 
+    [UnionAll2].[C13] AS [C12], 
+    [UnionAll2].[C14] AS [C13], 
+    [UnionAll2].[C15] AS [C14], 
+    [UnionAll2].[C16] AS [C15], 
+    [UnionAll2].[C17] AS [C16], 
+    [UnionAll2].[C18] AS [C17], 
+    [UnionAll2].[C19] AS [C18], 
+    [UnionAll2].[C20] AS [C19], 
+    [UnionAll2].[C21] AS [C20], 
+    [UnionAll2].[C1] AS [C21], 
+    [UnionAll2].[C22] AS [C22], 
+    [UnionAll2].[C23] AS [C23], 
+    [UnionAll2].[C24] AS [C24], 
+    [UnionAll2].[C25] AS [C25], 
+    [UnionAll2].[C26] AS [C26], 
+    [UnionAll2].[C27] AS [C27], 
+    [UnionAll2].[C28] AS [C28], 
+    [UnionAll2].[C29] AS [C29], 
+    [UnionAll2].[C30] AS [C30], 
+    [UnionAll2].[C31] AS [C31], 
+    [UnionAll2].[C32] AS [C32], 
+    [UnionAll2].[C33] AS [C33], 
+    [UnionAll2].[C34] AS [C34], 
+    [UnionAll2].[C35] AS [C35], 
+    [UnionAll2].[C36] AS [C36], 
+    [UnionAll2].[C37] AS [C37]
+    FROM  (SELECT 
+        [UnionAll1].[C1] AS [C1], 
+        [UnionAll1].[AccessFailedCount] AS [C2], 
+        [UnionAll1].[Id] AS [C3], 
+        [UnionAll1].[IsEmailVisible] AS [C4], 
+        [UnionAll1].[IsEmailVisibleForTeam] AS [C5], 
+        [UnionAll1].[Name] AS [C6], 
+        [UnionAll1].[SurName] AS [C7], 
+        [UnionAll1].[CreateDate] AS [C8], 
+        [UnionAll1].[UpdateDate] AS [C9], 
+        [UnionAll1].[isEmailSend] AS [C10], 
+        [UnionAll1].[Email] AS [C11], 
+        [UnionAll1].[EmailConfirmed] AS [C12], 
+        [UnionAll1].[PasswordHash] AS [C13], 
+        [UnionAll1].[SecurityStamp] AS [C14], 
+        [UnionAll1].[PhoneNumber] AS [C15], 
+        [UnionAll1].[PhoneNumberConfirmed] AS [C16], 
+        [UnionAll1].[TwoFactorEnabled] AS [C17], 
+        [UnionAll1].[LockoutEndDateUtc] AS [C18], 
+        [UnionAll1].[LockoutEnabled] AS [C19], 
+        [UnionAll1].[AccessFailedCount1] AS [C20], 
+        [UnionAll1].[UserName] AS [C21], 
+        [UnionAll1].[C2] AS [C22], 
+        [UnionAll1].[RoleId] AS [C23], 
+        [UnionAll1].[UserId] AS [C24], 
+        [UnionAll1].[ApplicationUser_Id] AS [C25], 
+        [UnionAll1].[IdentityRole_Id] AS [C26], 
+        [UnionAll1].[C3] AS [C27], 
+        [UnionAll1].[C4] AS [C28], 
+        [UnionAll1].[C5] AS [C29], 
+        [UnionAll1].[C6] AS [C30], 
+        [UnionAll1].[C7] AS [C31], 
+        [UnionAll1].[C8] AS [C32], 
+        [UnionAll1].[C9] AS [C33], 
+        [UnionAll1].[C10] AS [C34], 
+        [UnionAll1].[C11] AS [C35], 
+        [UnionAll1].[C12] AS [C36], 
+        [UnionAll1].[C13] AS [C37]
+        FROM  (SELECT 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit1].[Id] AS [Id], 
+            [Limit1].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit1].[Name] AS [Name], 
+            [Limit1].[SurName] AS [SurName], 
+            [Limit1].[CreateDate] AS [CreateDate], 
+            [Limit1].[UpdateDate] AS [UpdateDate], 
+            [Limit1].[isEmailSend] AS [isEmailSend], 
+            [Limit1].[Email] AS [Email], 
+            [Limit1].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit1].[PasswordHash] AS [PasswordHash], 
+            [Limit1].[SecurityStamp] AS [SecurityStamp], 
+            [Limit1].[PhoneNumber] AS [PhoneNumber], 
+            [Limit1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit1].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit1].[UserName] AS [UserName], 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C2], 
+            [Extent2].[RoleId] AS [RoleId], 
+            [Extent2].[UserId] AS [UserId], 
+            [Extent2].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            [Extent2].[IdentityRole_Id] AS [IdentityRole_Id], 
+            CAST(NULL AS int) AS [C3], 
+            CAST(NULL AS int) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            CAST(NULL AS varchar(1)) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS int) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11], 
+            CAST(NULL AS varchar(1)) AS [C12], 
+            CAST(NULL AS varchar(1)) AS [C13]
+            FROM   (SELECT TOP (1) 
+                [Extent1].[Id] AS [Id], 
+                [Extent1].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent1].[Name] AS [Name], 
+                [Extent1].[SurName] AS [SurName], 
+                [Extent1].[CreateDate] AS [CreateDate], 
+                [Extent1].[UpdateDate] AS [UpdateDate], 
+                [Extent1].[isEmailSend] AS [isEmailSend], 
+                [Extent1].[Email] AS [Email], 
+                [Extent1].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent1].[PasswordHash] AS [PasswordHash], 
+                [Extent1].[SecurityStamp] AS [SecurityStamp], 
+                [Extent1].[PhoneNumber] AS [PhoneNumber], 
+                [Extent1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent1].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent1].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent1].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent1]
+                WHERE [Extent1].[Id] = @p__linq__0 ) AS [Limit1]
+            LEFT OUTER JOIN [dbo].[IdentityUserRoles] AS [Extent2] ON [Limit1].[Id] = [Extent2].[ApplicationUser_Id]
+        UNION ALL
+            SELECT 
+            2 AS [C1], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit2].[Id] AS [Id], 
+            [Limit2].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit2].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit2].[Name] AS [Name], 
+            [Limit2].[SurName] AS [SurName], 
+            [Limit2].[CreateDate] AS [CreateDate], 
+            [Limit2].[UpdateDate] AS [UpdateDate], 
+            [Limit2].[isEmailSend] AS [isEmailSend], 
+            [Limit2].[Email] AS [Email], 
+            [Limit2].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit2].[PasswordHash] AS [PasswordHash], 
+            [Limit2].[SecurityStamp] AS [SecurityStamp], 
+            [Limit2].[PhoneNumber] AS [PhoneNumber], 
+            [Limit2].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit2].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit2].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit2].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit2].[UserName] AS [UserName], 
+            CAST(NULL AS int) AS [C2], 
+            CAST(NULL AS varchar(1)) AS [C3], 
+            CAST(NULL AS varchar(1)) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            [Extent4].[Id] AS [Id1], 
+            [Extent4].[Id] AS [Id2], 
+            [Extent4].[UserId] AS [UserId], 
+            [Extent4].[ClaimType] AS [ClaimType], 
+            [Extent4].[ClaimValue] AS [ClaimValue], 
+            [Extent4].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            CAST(NULL AS int) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS varchar(1)) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11]
+            FROM   (SELECT TOP (1) 
+                [Extent3].[Id] AS [Id], 
+                [Extent3].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent3].[Name] AS [Name], 
+                [Extent3].[SurName] AS [SurName], 
+                [Extent3].[CreateDate] AS [CreateDate], 
+                [Extent3].[UpdateDate] AS [UpdateDate], 
+                [Extent3].[isEmailSend] AS [isEmailSend], 
+                [Extent3].[Email] AS [Email], 
+                [Extent3].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent3].[PasswordHash] AS [PasswordHash], 
+                [Extent3].[SecurityStamp] AS [SecurityStamp], 
+                [Extent3].[PhoneNumber] AS [PhoneNumber], 
+                [Extent3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent3].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent3].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent3].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent3]
+                WHERE [Extent3].[Id] = @p__linq__0 ) AS [Limit2]
+            INNER JOIN [dbo].[IdentityUserClaims] AS [Extent4] ON [Limit2].[Id] = [Extent4].[ApplicationUser_Id]) AS [UnionAll1]
+    UNION ALL
+        SELECT 
+        3 AS [C1], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount], 
+        [Limit3].[Id] AS [Id], 
+        [Limit3].[IsEmailVisible] AS [IsEmailVisible], 
+        [Limit3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+        [Limit3].[Name] AS [Name], 
+        [Limit3].[SurName] AS [SurName], 
+        [Limit3].[CreateDate] AS [CreateDate], 
+        [Limit3].[UpdateDate] AS [UpdateDate], 
+        [Limit3].[isEmailSend] AS [isEmailSend], 
+        [Limit3].[Email] AS [Email], 
+        [Limit3].[EmailConfirmed] AS [EmailConfirmed], 
+        [Limit3].[PasswordHash] AS [PasswordHash], 
+        [Limit3].[SecurityStamp] AS [SecurityStamp], 
+        [Limit3].[PhoneNumber] AS [PhoneNumber], 
+        [Limit3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+        [Limit3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+        [Limit3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+        [Limit3].[LockoutEnabled] AS [LockoutEnabled], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount1], 
+        [Limit3].[UserName] AS [UserName], 
+        CAST(NULL AS int) AS [C2], 
+        CAST(NULL AS varchar(1)) AS [C3], 
+        CAST(NULL AS varchar(1)) AS [C4], 
+        CAST(NULL AS varchar(1)) AS [C5], 
+        CAST(NULL AS varchar(1)) AS [C6], 
+        CAST(NULL AS int) AS [C7], 
+        CAST(NULL AS int) AS [C8], 
+        CAST(NULL AS varchar(1)) AS [C9], 
+        CAST(NULL AS varchar(1)) AS [C10], 
+        CAST(NULL AS varchar(1)) AS [C11], 
+        CAST(NULL AS varchar(1)) AS [C12], 
+        3 AS [C13], 
+        [Extent6].[UserId] AS [UserId], 
+        [Extent6].[LoginProvider] AS [LoginProvider], 
+        [Extent6].[ProviderKey] AS [ProviderKey], 
+        [Extent6].[ApplicationUser_Id] AS [ApplicationUser_Id]
+        FROM   (SELECT TOP (1) 
+            [Extent5].[Id] AS [Id], 
+            [Extent5].[IsEmailVisible] AS [IsEmailVisible], 
+            [Extent5].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Extent5].[Name] AS [Name], 
+            [Extent5].[SurName] AS [SurName], 
+            [Extent5].[CreateDate] AS [CreateDate], 
+            [Extent5].[UpdateDate] AS [UpdateDate], 
+            [Extent5].[isEmailSend] AS [isEmailSend], 
+            [Extent5].[Email] AS [Email], 
+            [Extent5].[EmailConfirmed] AS [EmailConfirmed], 
+            [Extent5].[PasswordHash] AS [PasswordHash], 
+            [Extent5].[SecurityStamp] AS [SecurityStamp], 
+            [Extent5].[PhoneNumber] AS [PhoneNumber], 
+            [Extent5].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Extent5].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Extent5].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Extent5].[LockoutEnabled] AS [LockoutEnabled], 
+            [Extent5].[AccessFailedCount] AS [AccessFailedCount], 
+            [Extent5].[UserName] AS [UserName]
+            FROM [dbo].[ApplicationUsers] AS [Extent5]
+            WHERE [Extent5].[Id] = @p__linq__0 ) AS [Limit3]
+        INNER JOIN [dbo].[IdentityUserLogins] AS [Extent6] ON [Limit3].[Id] = [Extent6].[ApplicationUser_Id]) AS [UnionAll2]
+    ORDER BY [UnionAll2].[C3] ASC, [UnionAll2].[C1] ASC
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	-- p__linq__0: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:32	INFO:	-- Executing asynchronously at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	-- Completed in 10 ms with result: SqlDataReader
+
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	Closed connection at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	Opened connection asynchronously at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	SELECT 
+    [UnionAll2].[C2] AS [C1], 
+    [UnionAll2].[C3] AS [C2], 
+    [UnionAll2].[C4] AS [C3], 
+    [UnionAll2].[C5] AS [C4], 
+    [UnionAll2].[C6] AS [C5], 
+    [UnionAll2].[C7] AS [C6], 
+    [UnionAll2].[C8] AS [C7], 
+    [UnionAll2].[C9] AS [C8], 
+    [UnionAll2].[C10] AS [C9], 
+    [UnionAll2].[C11] AS [C10], 
+    [UnionAll2].[C12] AS [C11], 
+    [UnionAll2].[C13] AS [C12], 
+    [UnionAll2].[C14] AS [C13], 
+    [UnionAll2].[C15] AS [C14], 
+    [UnionAll2].[C16] AS [C15], 
+    [UnionAll2].[C17] AS [C16], 
+    [UnionAll2].[C18] AS [C17], 
+    [UnionAll2].[C19] AS [C18], 
+    [UnionAll2].[C20] AS [C19], 
+    [UnionAll2].[C21] AS [C20], 
+    [UnionAll2].[C1] AS [C21], 
+    [UnionAll2].[C22] AS [C22], 
+    [UnionAll2].[C23] AS [C23], 
+    [UnionAll2].[C24] AS [C24], 
+    [UnionAll2].[C25] AS [C25], 
+    [UnionAll2].[C26] AS [C26], 
+    [UnionAll2].[C27] AS [C27], 
+    [UnionAll2].[C28] AS [C28], 
+    [UnionAll2].[C29] AS [C29], 
+    [UnionAll2].[C30] AS [C30], 
+    [UnionAll2].[C31] AS [C31], 
+    [UnionAll2].[C32] AS [C32], 
+    [UnionAll2].[C33] AS [C33], 
+    [UnionAll2].[C34] AS [C34], 
+    [UnionAll2].[C35] AS [C35], 
+    [UnionAll2].[C36] AS [C36], 
+    [UnionAll2].[C37] AS [C37]
+    FROM  (SELECT 
+        [UnionAll1].[C1] AS [C1], 
+        [UnionAll1].[AccessFailedCount] AS [C2], 
+        [UnionAll1].[Id] AS [C3], 
+        [UnionAll1].[IsEmailVisible] AS [C4], 
+        [UnionAll1].[IsEmailVisibleForTeam] AS [C5], 
+        [UnionAll1].[Name] AS [C6], 
+        [UnionAll1].[SurName] AS [C7], 
+        [UnionAll1].[CreateDate] AS [C8], 
+        [UnionAll1].[UpdateDate] AS [C9], 
+        [UnionAll1].[isEmailSend] AS [C10], 
+        [UnionAll1].[Email] AS [C11], 
+        [UnionAll1].[EmailConfirmed] AS [C12], 
+        [UnionAll1].[PasswordHash] AS [C13], 
+        [UnionAll1].[SecurityStamp] AS [C14], 
+        [UnionAll1].[PhoneNumber] AS [C15], 
+        [UnionAll1].[PhoneNumberConfirmed] AS [C16], 
+        [UnionAll1].[TwoFactorEnabled] AS [C17], 
+        [UnionAll1].[LockoutEndDateUtc] AS [C18], 
+        [UnionAll1].[LockoutEnabled] AS [C19], 
+        [UnionAll1].[AccessFailedCount1] AS [C20], 
+        [UnionAll1].[UserName] AS [C21], 
+        [UnionAll1].[C2] AS [C22], 
+        [UnionAll1].[RoleId] AS [C23], 
+        [UnionAll1].[UserId] AS [C24], 
+        [UnionAll1].[ApplicationUser_Id] AS [C25], 
+        [UnionAll1].[IdentityRole_Id] AS [C26], 
+        [UnionAll1].[C3] AS [C27], 
+        [UnionAll1].[C4] AS [C28], 
+        [UnionAll1].[C5] AS [C29], 
+        [UnionAll1].[C6] AS [C30], 
+        [UnionAll1].[C7] AS [C31], 
+        [UnionAll1].[C8] AS [C32], 
+        [UnionAll1].[C9] AS [C33], 
+        [UnionAll1].[C10] AS [C34], 
+        [UnionAll1].[C11] AS [C35], 
+        [UnionAll1].[C12] AS [C36], 
+        [UnionAll1].[C13] AS [C37]
+        FROM  (SELECT 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit1].[Id] AS [Id], 
+            [Limit1].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit1].[Name] AS [Name], 
+            [Limit1].[SurName] AS [SurName], 
+            [Limit1].[CreateDate] AS [CreateDate], 
+            [Limit1].[UpdateDate] AS [UpdateDate], 
+            [Limit1].[isEmailSend] AS [isEmailSend], 
+            [Limit1].[Email] AS [Email], 
+            [Limit1].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit1].[PasswordHash] AS [PasswordHash], 
+            [Limit1].[SecurityStamp] AS [SecurityStamp], 
+            [Limit1].[PhoneNumber] AS [PhoneNumber], 
+            [Limit1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit1].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit1].[UserName] AS [UserName], 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C2], 
+            [Extent2].[RoleId] AS [RoleId], 
+            [Extent2].[UserId] AS [UserId], 
+            [Extent2].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            [Extent2].[IdentityRole_Id] AS [IdentityRole_Id], 
+            CAST(NULL AS int) AS [C3], 
+            CAST(NULL AS int) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            CAST(NULL AS varchar(1)) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS int) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11], 
+            CAST(NULL AS varchar(1)) AS [C12], 
+            CAST(NULL AS varchar(1)) AS [C13]
+            FROM   (SELECT TOP (1) 
+                [Extent1].[Id] AS [Id], 
+                [Extent1].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent1].[Name] AS [Name], 
+                [Extent1].[SurName] AS [SurName], 
+                [Extent1].[CreateDate] AS [CreateDate], 
+                [Extent1].[UpdateDate] AS [UpdateDate], 
+                [Extent1].[isEmailSend] AS [isEmailSend], 
+                [Extent1].[Email] AS [Email], 
+                [Extent1].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent1].[PasswordHash] AS [PasswordHash], 
+                [Extent1].[SecurityStamp] AS [SecurityStamp], 
+                [Extent1].[PhoneNumber] AS [PhoneNumber], 
+                [Extent1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent1].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent1].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent1].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent1]
+                WHERE [Extent1].[Id] = @p__linq__0 ) AS [Limit1]
+            LEFT OUTER JOIN [dbo].[IdentityUserRoles] AS [Extent2] ON [Limit1].[Id] = [Extent2].[ApplicationUser_Id]
+        UNION ALL
+            SELECT 
+            2 AS [C1], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit2].[Id] AS [Id], 
+            [Limit2].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit2].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit2].[Name] AS [Name], 
+            [Limit2].[SurName] AS [SurName], 
+            [Limit2].[CreateDate] AS [CreateDate], 
+            [Limit2].[UpdateDate] AS [UpdateDate], 
+            [Limit2].[isEmailSend] AS [isEmailSend], 
+            [Limit2].[Email] AS [Email], 
+            [Limit2].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit2].[PasswordHash] AS [PasswordHash], 
+            [Limit2].[SecurityStamp] AS [SecurityStamp], 
+            [Limit2].[PhoneNumber] AS [PhoneNumber], 
+            [Limit2].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit2].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit2].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit2].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit2].[UserName] AS [UserName], 
+            CAST(NULL AS int) AS [C2], 
+            CAST(NULL AS varchar(1)) AS [C3], 
+            CAST(NULL AS varchar(1)) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            [Extent4].[Id] AS [Id1], 
+            [Extent4].[Id] AS [Id2], 
+            [Extent4].[UserId] AS [UserId], 
+            [Extent4].[ClaimType] AS [ClaimType], 
+            [Extent4].[ClaimValue] AS [ClaimValue], 
+            [Extent4].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            CAST(NULL AS int) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS varchar(1)) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11]
+            FROM   (SELECT TOP (1) 
+                [Extent3].[Id] AS [Id], 
+                [Extent3].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent3].[Name] AS [Name], 
+                [Extent3].[SurName] AS [SurName], 
+                [Extent3].[CreateDate] AS [CreateDate], 
+                [Extent3].[UpdateDate] AS [UpdateDate], 
+                [Extent3].[isEmailSend] AS [isEmailSend], 
+                [Extent3].[Email] AS [Email], 
+                [Extent3].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent3].[PasswordHash] AS [PasswordHash], 
+                [Extent3].[SecurityStamp] AS [SecurityStamp], 
+                [Extent3].[PhoneNumber] AS [PhoneNumber], 
+                [Extent3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent3].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent3].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent3].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent3]
+                WHERE [Extent3].[Id] = @p__linq__0 ) AS [Limit2]
+            INNER JOIN [dbo].[IdentityUserClaims] AS [Extent4] ON [Limit2].[Id] = [Extent4].[ApplicationUser_Id]) AS [UnionAll1]
+    UNION ALL
+        SELECT 
+        3 AS [C1], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount], 
+        [Limit3].[Id] AS [Id], 
+        [Limit3].[IsEmailVisible] AS [IsEmailVisible], 
+        [Limit3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+        [Limit3].[Name] AS [Name], 
+        [Limit3].[SurName] AS [SurName], 
+        [Limit3].[CreateDate] AS [CreateDate], 
+        [Limit3].[UpdateDate] AS [UpdateDate], 
+        [Limit3].[isEmailSend] AS [isEmailSend], 
+        [Limit3].[Email] AS [Email], 
+        [Limit3].[EmailConfirmed] AS [EmailConfirmed], 
+        [Limit3].[PasswordHash] AS [PasswordHash], 
+        [Limit3].[SecurityStamp] AS [SecurityStamp], 
+        [Limit3].[PhoneNumber] AS [PhoneNumber], 
+        [Limit3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+        [Limit3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+        [Limit3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+        [Limit3].[LockoutEnabled] AS [LockoutEnabled], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount1], 
+        [Limit3].[UserName] AS [UserName], 
+        CAST(NULL AS int) AS [C2], 
+        CAST(NULL AS varchar(1)) AS [C3], 
+        CAST(NULL AS varchar(1)) AS [C4], 
+        CAST(NULL AS varchar(1)) AS [C5], 
+        CAST(NULL AS varchar(1)) AS [C6], 
+        CAST(NULL AS int) AS [C7], 
+        CAST(NULL AS int) AS [C8], 
+        CAST(NULL AS varchar(1)) AS [C9], 
+        CAST(NULL AS varchar(1)) AS [C10], 
+        CAST(NULL AS varchar(1)) AS [C11], 
+        CAST(NULL AS varchar(1)) AS [C12], 
+        3 AS [C13], 
+        [Extent6].[UserId] AS [UserId], 
+        [Extent6].[LoginProvider] AS [LoginProvider], 
+        [Extent6].[ProviderKey] AS [ProviderKey], 
+        [Extent6].[ApplicationUser_Id] AS [ApplicationUser_Id]
+        FROM   (SELECT TOP (1) 
+            [Extent5].[Id] AS [Id], 
+            [Extent5].[IsEmailVisible] AS [IsEmailVisible], 
+            [Extent5].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Extent5].[Name] AS [Name], 
+            [Extent5].[SurName] AS [SurName], 
+            [Extent5].[CreateDate] AS [CreateDate], 
+            [Extent5].[UpdateDate] AS [UpdateDate], 
+            [Extent5].[isEmailSend] AS [isEmailSend], 
+            [Extent5].[Email] AS [Email], 
+            [Extent5].[EmailConfirmed] AS [EmailConfirmed], 
+            [Extent5].[PasswordHash] AS [PasswordHash], 
+            [Extent5].[SecurityStamp] AS [SecurityStamp], 
+            [Extent5].[PhoneNumber] AS [PhoneNumber], 
+            [Extent5].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Extent5].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Extent5].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Extent5].[LockoutEnabled] AS [LockoutEnabled], 
+            [Extent5].[AccessFailedCount] AS [AccessFailedCount], 
+            [Extent5].[UserName] AS [UserName]
+            FROM [dbo].[ApplicationUsers] AS [Extent5]
+            WHERE [Extent5].[Id] = @p__linq__0 ) AS [Limit3]
+        INNER JOIN [dbo].[IdentityUserLogins] AS [Extent6] ON [Limit3].[Id] = [Extent6].[ApplicationUser_Id]) AS [UnionAll2]
+    ORDER BY [UnionAll2].[C3] ASC, [UnionAll2].[C1] ASC
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	-- p__linq__0: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:32	INFO:	-- Executing asynchronously at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	-- Completed in 4 ms with result: SqlDataReader
+
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	Closed connection at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	Opened connection asynchronously at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	SELECT 
+    [UnionAll2].[C2] AS [C1], 
+    [UnionAll2].[C3] AS [C2], 
+    [UnionAll2].[C4] AS [C3], 
+    [UnionAll2].[C5] AS [C4], 
+    [UnionAll2].[C6] AS [C5], 
+    [UnionAll2].[C7] AS [C6], 
+    [UnionAll2].[C8] AS [C7], 
+    [UnionAll2].[C9] AS [C8], 
+    [UnionAll2].[C10] AS [C9], 
+    [UnionAll2].[C11] AS [C10], 
+    [UnionAll2].[C12] AS [C11], 
+    [UnionAll2].[C13] AS [C12], 
+    [UnionAll2].[C14] AS [C13], 
+    [UnionAll2].[C15] AS [C14], 
+    [UnionAll2].[C16] AS [C15], 
+    [UnionAll2].[C17] AS [C16], 
+    [UnionAll2].[C18] AS [C17], 
+    [UnionAll2].[C19] AS [C18], 
+    [UnionAll2].[C20] AS [C19], 
+    [UnionAll2].[C21] AS [C20], 
+    [UnionAll2].[C1] AS [C21], 
+    [UnionAll2].[C22] AS [C22], 
+    [UnionAll2].[C23] AS [C23], 
+    [UnionAll2].[C24] AS [C24], 
+    [UnionAll2].[C25] AS [C25], 
+    [UnionAll2].[C26] AS [C26], 
+    [UnionAll2].[C27] AS [C27], 
+    [UnionAll2].[C28] AS [C28], 
+    [UnionAll2].[C29] AS [C29], 
+    [UnionAll2].[C30] AS [C30], 
+    [UnionAll2].[C31] AS [C31], 
+    [UnionAll2].[C32] AS [C32], 
+    [UnionAll2].[C33] AS [C33], 
+    [UnionAll2].[C34] AS [C34], 
+    [UnionAll2].[C35] AS [C35], 
+    [UnionAll2].[C36] AS [C36], 
+    [UnionAll2].[C37] AS [C37]
+    FROM  (SELECT 
+        [UnionAll1].[C1] AS [C1], 
+        [UnionAll1].[AccessFailedCount] AS [C2], 
+        [UnionAll1].[Id] AS [C3], 
+        [UnionAll1].[IsEmailVisible] AS [C4], 
+        [UnionAll1].[IsEmailVisibleForTeam] AS [C5], 
+        [UnionAll1].[Name] AS [C6], 
+        [UnionAll1].[SurName] AS [C7], 
+        [UnionAll1].[CreateDate] AS [C8], 
+        [UnionAll1].[UpdateDate] AS [C9], 
+        [UnionAll1].[isEmailSend] AS [C10], 
+        [UnionAll1].[Email] AS [C11], 
+        [UnionAll1].[EmailConfirmed] AS [C12], 
+        [UnionAll1].[PasswordHash] AS [C13], 
+        [UnionAll1].[SecurityStamp] AS [C14], 
+        [UnionAll1].[PhoneNumber] AS [C15], 
+        [UnionAll1].[PhoneNumberConfirmed] AS [C16], 
+        [UnionAll1].[TwoFactorEnabled] AS [C17], 
+        [UnionAll1].[LockoutEndDateUtc] AS [C18], 
+        [UnionAll1].[LockoutEnabled] AS [C19], 
+        [UnionAll1].[AccessFailedCount1] AS [C20], 
+        [UnionAll1].[UserName] AS [C21], 
+        [UnionAll1].[C2] AS [C22], 
+        [UnionAll1].[RoleId] AS [C23], 
+        [UnionAll1].[UserId] AS [C24], 
+        [UnionAll1].[ApplicationUser_Id] AS [C25], 
+        [UnionAll1].[IdentityRole_Id] AS [C26], 
+        [UnionAll1].[C3] AS [C27], 
+        [UnionAll1].[C4] AS [C28], 
+        [UnionAll1].[C5] AS [C29], 
+        [UnionAll1].[C6] AS [C30], 
+        [UnionAll1].[C7] AS [C31], 
+        [UnionAll1].[C8] AS [C32], 
+        [UnionAll1].[C9] AS [C33], 
+        [UnionAll1].[C10] AS [C34], 
+        [UnionAll1].[C11] AS [C35], 
+        [UnionAll1].[C12] AS [C36], 
+        [UnionAll1].[C13] AS [C37]
+        FROM  (SELECT 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit1].[Id] AS [Id], 
+            [Limit1].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit1].[Name] AS [Name], 
+            [Limit1].[SurName] AS [SurName], 
+            [Limit1].[CreateDate] AS [CreateDate], 
+            [Limit1].[UpdateDate] AS [UpdateDate], 
+            [Limit1].[isEmailSend] AS [isEmailSend], 
+            [Limit1].[Email] AS [Email], 
+            [Limit1].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit1].[PasswordHash] AS [PasswordHash], 
+            [Limit1].[SecurityStamp] AS [SecurityStamp], 
+            [Limit1].[PhoneNumber] AS [PhoneNumber], 
+            [Limit1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit1].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit1].[UserName] AS [UserName], 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C2], 
+            [Extent2].[RoleId] AS [RoleId], 
+            [Extent2].[UserId] AS [UserId], 
+            [Extent2].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            [Extent2].[IdentityRole_Id] AS [IdentityRole_Id], 
+            CAST(NULL AS int) AS [C3], 
+            CAST(NULL AS int) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            CAST(NULL AS varchar(1)) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS int) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11], 
+            CAST(NULL AS varchar(1)) AS [C12], 
+            CAST(NULL AS varchar(1)) AS [C13]
+            FROM   (SELECT TOP (1) 
+                [Extent1].[Id] AS [Id], 
+                [Extent1].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent1].[Name] AS [Name], 
+                [Extent1].[SurName] AS [SurName], 
+                [Extent1].[CreateDate] AS [CreateDate], 
+                [Extent1].[UpdateDate] AS [UpdateDate], 
+                [Extent1].[isEmailSend] AS [isEmailSend], 
+                [Extent1].[Email] AS [Email], 
+                [Extent1].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent1].[PasswordHash] AS [PasswordHash], 
+                [Extent1].[SecurityStamp] AS [SecurityStamp], 
+                [Extent1].[PhoneNumber] AS [PhoneNumber], 
+                [Extent1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent1].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent1].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent1].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent1]
+                WHERE [Extent1].[Id] = @p__linq__0 ) AS [Limit1]
+            LEFT OUTER JOIN [dbo].[IdentityUserRoles] AS [Extent2] ON [Limit1].[Id] = [Extent2].[ApplicationUser_Id]
+        UNION ALL
+            SELECT 
+            2 AS [C1], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit2].[Id] AS [Id], 
+            [Limit2].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit2].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit2].[Name] AS [Name], 
+            [Limit2].[SurName] AS [SurName], 
+            [Limit2].[CreateDate] AS [CreateDate], 
+            [Limit2].[UpdateDate] AS [UpdateDate], 
+            [Limit2].[isEmailSend] AS [isEmailSend], 
+            [Limit2].[Email] AS [Email], 
+            [Limit2].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit2].[PasswordHash] AS [PasswordHash], 
+            [Limit2].[SecurityStamp] AS [SecurityStamp], 
+            [Limit2].[PhoneNumber] AS [PhoneNumber], 
+            [Limit2].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit2].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit2].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit2].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit2].[UserName] AS [UserName], 
+            CAST(NULL AS int) AS [C2], 
+            CAST(NULL AS varchar(1)) AS [C3], 
+            CAST(NULL AS varchar(1)) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            [Extent4].[Id] AS [Id1], 
+            [Extent4].[Id] AS [Id2], 
+            [Extent4].[UserId] AS [UserId], 
+            [Extent4].[ClaimType] AS [ClaimType], 
+            [Extent4].[ClaimValue] AS [ClaimValue], 
+            [Extent4].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            CAST(NULL AS int) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS varchar(1)) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11]
+            FROM   (SELECT TOP (1) 
+                [Extent3].[Id] AS [Id], 
+                [Extent3].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent3].[Name] AS [Name], 
+                [Extent3].[SurName] AS [SurName], 
+                [Extent3].[CreateDate] AS [CreateDate], 
+                [Extent3].[UpdateDate] AS [UpdateDate], 
+                [Extent3].[isEmailSend] AS [isEmailSend], 
+                [Extent3].[Email] AS [Email], 
+                [Extent3].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent3].[PasswordHash] AS [PasswordHash], 
+                [Extent3].[SecurityStamp] AS [SecurityStamp], 
+                [Extent3].[PhoneNumber] AS [PhoneNumber], 
+                [Extent3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent3].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent3].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent3].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent3]
+                WHERE [Extent3].[Id] = @p__linq__0 ) AS [Limit2]
+            INNER JOIN [dbo].[IdentityUserClaims] AS [Extent4] ON [Limit2].[Id] = [Extent4].[ApplicationUser_Id]) AS [UnionAll1]
+    UNION ALL
+        SELECT 
+        3 AS [C1], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount], 
+        [Limit3].[Id] AS [Id], 
+        [Limit3].[IsEmailVisible] AS [IsEmailVisible], 
+        [Limit3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+        [Limit3].[Name] AS [Name], 
+        [Limit3].[SurName] AS [SurName], 
+        [Limit3].[CreateDate] AS [CreateDate], 
+        [Limit3].[UpdateDate] AS [UpdateDate], 
+        [Limit3].[isEmailSend] AS [isEmailSend], 
+        [Limit3].[Email] AS [Email], 
+        [Limit3].[EmailConfirmed] AS [EmailConfirmed], 
+        [Limit3].[PasswordHash] AS [PasswordHash], 
+        [Limit3].[SecurityStamp] AS [SecurityStamp], 
+        [Limit3].[PhoneNumber] AS [PhoneNumber], 
+        [Limit3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+        [Limit3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+        [Limit3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+        [Limit3].[LockoutEnabled] AS [LockoutEnabled], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount1], 
+        [Limit3].[UserName] AS [UserName], 
+        CAST(NULL AS int) AS [C2], 
+        CAST(NULL AS varchar(1)) AS [C3], 
+        CAST(NULL AS varchar(1)) AS [C4], 
+        CAST(NULL AS varchar(1)) AS [C5], 
+        CAST(NULL AS varchar(1)) AS [C6], 
+        CAST(NULL AS int) AS [C7], 
+        CAST(NULL AS int) AS [C8], 
+        CAST(NULL AS varchar(1)) AS [C9], 
+        CAST(NULL AS varchar(1)) AS [C10], 
+        CAST(NULL AS varchar(1)) AS [C11], 
+        CAST(NULL AS varchar(1)) AS [C12], 
+        3 AS [C13], 
+        [Extent6].[UserId] AS [UserId], 
+        [Extent6].[LoginProvider] AS [LoginProvider], 
+        [Extent6].[ProviderKey] AS [ProviderKey], 
+        [Extent6].[ApplicationUser_Id] AS [ApplicationUser_Id]
+        FROM   (SELECT TOP (1) 
+            [Extent5].[Id] AS [Id], 
+            [Extent5].[IsEmailVisible] AS [IsEmailVisible], 
+            [Extent5].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Extent5].[Name] AS [Name], 
+            [Extent5].[SurName] AS [SurName], 
+            [Extent5].[CreateDate] AS [CreateDate], 
+            [Extent5].[UpdateDate] AS [UpdateDate], 
+            [Extent5].[isEmailSend] AS [isEmailSend], 
+            [Extent5].[Email] AS [Email], 
+            [Extent5].[EmailConfirmed] AS [EmailConfirmed], 
+            [Extent5].[PasswordHash] AS [PasswordHash], 
+            [Extent5].[SecurityStamp] AS [SecurityStamp], 
+            [Extent5].[PhoneNumber] AS [PhoneNumber], 
+            [Extent5].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Extent5].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Extent5].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Extent5].[LockoutEnabled] AS [LockoutEnabled], 
+            [Extent5].[AccessFailedCount] AS [AccessFailedCount], 
+            [Extent5].[UserName] AS [UserName]
+            FROM [dbo].[ApplicationUsers] AS [Extent5]
+            WHERE [Extent5].[Id] = @p__linq__0 ) AS [Limit3]
+        INNER JOIN [dbo].[IdentityUserLogins] AS [Extent6] ON [Limit3].[Id] = [Extent6].[ApplicationUser_Id]) AS [UnionAll2]
+    ORDER BY [UnionAll2].[C3] ASC, [UnionAll2].[C1] ASC
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	-- p__linq__0: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:32	INFO:	-- Executing asynchronously at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	-- Completed in 8 ms with result: SqlDataReader
+
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	Closed connection at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	Opened connection asynchronously at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	SELECT 
+    [UnionAll2].[C2] AS [C1], 
+    [UnionAll2].[C3] AS [C2], 
+    [UnionAll2].[C4] AS [C3], 
+    [UnionAll2].[C5] AS [C4], 
+    [UnionAll2].[C6] AS [C5], 
+    [UnionAll2].[C7] AS [C6], 
+    [UnionAll2].[C8] AS [C7], 
+    [UnionAll2].[C9] AS [C8], 
+    [UnionAll2].[C10] AS [C9], 
+    [UnionAll2].[C11] AS [C10], 
+    [UnionAll2].[C12] AS [C11], 
+    [UnionAll2].[C13] AS [C12], 
+    [UnionAll2].[C14] AS [C13], 
+    [UnionAll2].[C15] AS [C14], 
+    [UnionAll2].[C16] AS [C15], 
+    [UnionAll2].[C17] AS [C16], 
+    [UnionAll2].[C18] AS [C17], 
+    [UnionAll2].[C19] AS [C18], 
+    [UnionAll2].[C20] AS [C19], 
+    [UnionAll2].[C21] AS [C20], 
+    [UnionAll2].[C1] AS [C21], 
+    [UnionAll2].[C22] AS [C22], 
+    [UnionAll2].[C23] AS [C23], 
+    [UnionAll2].[C24] AS [C24], 
+    [UnionAll2].[C25] AS [C25], 
+    [UnionAll2].[C26] AS [C26], 
+    [UnionAll2].[C27] AS [C27], 
+    [UnionAll2].[C28] AS [C28], 
+    [UnionAll2].[C29] AS [C29], 
+    [UnionAll2].[C30] AS [C30], 
+    [UnionAll2].[C31] AS [C31], 
+    [UnionAll2].[C32] AS [C32], 
+    [UnionAll2].[C33] AS [C33], 
+    [UnionAll2].[C34] AS [C34], 
+    [UnionAll2].[C35] AS [C35], 
+    [UnionAll2].[C36] AS [C36], 
+    [UnionAll2].[C37] AS [C37]
+    FROM  (SELECT 
+        [UnionAll1].[C1] AS [C1], 
+        [UnionAll1].[AccessFailedCount] AS [C2], 
+        [UnionAll1].[Id] AS [C3], 
+        [UnionAll1].[IsEmailVisible] AS [C4], 
+        [UnionAll1].[IsEmailVisibleForTeam] AS [C5], 
+        [UnionAll1].[Name] AS [C6], 
+        [UnionAll1].[SurName] AS [C7], 
+        [UnionAll1].[CreateDate] AS [C8], 
+        [UnionAll1].[UpdateDate] AS [C9], 
+        [UnionAll1].[isEmailSend] AS [C10], 
+        [UnionAll1].[Email] AS [C11], 
+        [UnionAll1].[EmailConfirmed] AS [C12], 
+        [UnionAll1].[PasswordHash] AS [C13], 
+        [UnionAll1].[SecurityStamp] AS [C14], 
+        [UnionAll1].[PhoneNumber] AS [C15], 
+        [UnionAll1].[PhoneNumberConfirmed] AS [C16], 
+        [UnionAll1].[TwoFactorEnabled] AS [C17], 
+        [UnionAll1].[LockoutEndDateUtc] AS [C18], 
+        [UnionAll1].[LockoutEnabled] AS [C19], 
+        [UnionAll1].[AccessFailedCount1] AS [C20], 
+        [UnionAll1].[UserName] AS [C21], 
+        [UnionAll1].[C2] AS [C22], 
+        [UnionAll1].[RoleId] AS [C23], 
+        [UnionAll1].[UserId] AS [C24], 
+        [UnionAll1].[ApplicationUser_Id] AS [C25], 
+        [UnionAll1].[IdentityRole_Id] AS [C26], 
+        [UnionAll1].[C3] AS [C27], 
+        [UnionAll1].[C4] AS [C28], 
+        [UnionAll1].[C5] AS [C29], 
+        [UnionAll1].[C6] AS [C30], 
+        [UnionAll1].[C7] AS [C31], 
+        [UnionAll1].[C8] AS [C32], 
+        [UnionAll1].[C9] AS [C33], 
+        [UnionAll1].[C10] AS [C34], 
+        [UnionAll1].[C11] AS [C35], 
+        [UnionAll1].[C12] AS [C36], 
+        [UnionAll1].[C13] AS [C37]
+        FROM  (SELECT 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit1].[Id] AS [Id], 
+            [Limit1].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit1].[Name] AS [Name], 
+            [Limit1].[SurName] AS [SurName], 
+            [Limit1].[CreateDate] AS [CreateDate], 
+            [Limit1].[UpdateDate] AS [UpdateDate], 
+            [Limit1].[isEmailSend] AS [isEmailSend], 
+            [Limit1].[Email] AS [Email], 
+            [Limit1].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit1].[PasswordHash] AS [PasswordHash], 
+            [Limit1].[SecurityStamp] AS [SecurityStamp], 
+            [Limit1].[PhoneNumber] AS [PhoneNumber], 
+            [Limit1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit1].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit1].[UserName] AS [UserName], 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C2], 
+            [Extent2].[RoleId] AS [RoleId], 
+            [Extent2].[UserId] AS [UserId], 
+            [Extent2].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            [Extent2].[IdentityRole_Id] AS [IdentityRole_Id], 
+            CAST(NULL AS int) AS [C3], 
+            CAST(NULL AS int) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            CAST(NULL AS varchar(1)) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS int) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11], 
+            CAST(NULL AS varchar(1)) AS [C12], 
+            CAST(NULL AS varchar(1)) AS [C13]
+            FROM   (SELECT TOP (1) 
+                [Extent1].[Id] AS [Id], 
+                [Extent1].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent1].[Name] AS [Name], 
+                [Extent1].[SurName] AS [SurName], 
+                [Extent1].[CreateDate] AS [CreateDate], 
+                [Extent1].[UpdateDate] AS [UpdateDate], 
+                [Extent1].[isEmailSend] AS [isEmailSend], 
+                [Extent1].[Email] AS [Email], 
+                [Extent1].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent1].[PasswordHash] AS [PasswordHash], 
+                [Extent1].[SecurityStamp] AS [SecurityStamp], 
+                [Extent1].[PhoneNumber] AS [PhoneNumber], 
+                [Extent1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent1].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent1].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent1].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent1]
+                WHERE [Extent1].[Id] = @p__linq__0 ) AS [Limit1]
+            LEFT OUTER JOIN [dbo].[IdentityUserRoles] AS [Extent2] ON [Limit1].[Id] = [Extent2].[ApplicationUser_Id]
+        UNION ALL
+            SELECT 
+            2 AS [C1], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit2].[Id] AS [Id], 
+            [Limit2].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit2].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit2].[Name] AS [Name], 
+            [Limit2].[SurName] AS [SurName], 
+            [Limit2].[CreateDate] AS [CreateDate], 
+            [Limit2].[UpdateDate] AS [UpdateDate], 
+            [Limit2].[isEmailSend] AS [isEmailSend], 
+            [Limit2].[Email] AS [Email], 
+            [Limit2].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit2].[PasswordHash] AS [PasswordHash], 
+            [Limit2].[SecurityStamp] AS [SecurityStamp], 
+            [Limit2].[PhoneNumber] AS [PhoneNumber], 
+            [Limit2].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit2].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit2].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit2].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit2].[UserName] AS [UserName], 
+            CAST(NULL AS int) AS [C2], 
+            CAST(NULL AS varchar(1)) AS [C3], 
+            CAST(NULL AS varchar(1)) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            [Extent4].[Id] AS [Id1], 
+            [Extent4].[Id] AS [Id2], 
+            [Extent4].[UserId] AS [UserId], 
+            [Extent4].[ClaimType] AS [ClaimType], 
+            [Extent4].[ClaimValue] AS [ClaimValue], 
+            [Extent4].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            CAST(NULL AS int) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS varchar(1)) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11]
+            FROM   (SELECT TOP (1) 
+                [Extent3].[Id] AS [Id], 
+                [Extent3].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent3].[Name] AS [Name], 
+                [Extent3].[SurName] AS [SurName], 
+                [Extent3].[CreateDate] AS [CreateDate], 
+                [Extent3].[UpdateDate] AS [UpdateDate], 
+                [Extent3].[isEmailSend] AS [isEmailSend], 
+                [Extent3].[Email] AS [Email], 
+                [Extent3].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent3].[PasswordHash] AS [PasswordHash], 
+                [Extent3].[SecurityStamp] AS [SecurityStamp], 
+                [Extent3].[PhoneNumber] AS [PhoneNumber], 
+                [Extent3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent3].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent3].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent3].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent3]
+                WHERE [Extent3].[Id] = @p__linq__0 ) AS [Limit2]
+            INNER JOIN [dbo].[IdentityUserClaims] AS [Extent4] ON [Limit2].[Id] = [Extent4].[ApplicationUser_Id]) AS [UnionAll1]
+    UNION ALL
+        SELECT 
+        3 AS [C1], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount], 
+        [Limit3].[Id] AS [Id], 
+        [Limit3].[IsEmailVisible] AS [IsEmailVisible], 
+        [Limit3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+        [Limit3].[Name] AS [Name], 
+        [Limit3].[SurName] AS [SurName], 
+        [Limit3].[CreateDate] AS [CreateDate], 
+        [Limit3].[UpdateDate] AS [UpdateDate], 
+        [Limit3].[isEmailSend] AS [isEmailSend], 
+        [Limit3].[Email] AS [Email], 
+        [Limit3].[EmailConfirmed] AS [EmailConfirmed], 
+        [Limit3].[PasswordHash] AS [PasswordHash], 
+        [Limit3].[SecurityStamp] AS [SecurityStamp], 
+        [Limit3].[PhoneNumber] AS [PhoneNumber], 
+        [Limit3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+        [Limit3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+        [Limit3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+        [Limit3].[LockoutEnabled] AS [LockoutEnabled], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount1], 
+        [Limit3].[UserName] AS [UserName], 
+        CAST(NULL AS int) AS [C2], 
+        CAST(NULL AS varchar(1)) AS [C3], 
+        CAST(NULL AS varchar(1)) AS [C4], 
+        CAST(NULL AS varchar(1)) AS [C5], 
+        CAST(NULL AS varchar(1)) AS [C6], 
+        CAST(NULL AS int) AS [C7], 
+        CAST(NULL AS int) AS [C8], 
+        CAST(NULL AS varchar(1)) AS [C9], 
+        CAST(NULL AS varchar(1)) AS [C10], 
+        CAST(NULL AS varchar(1)) AS [C11], 
+        CAST(NULL AS varchar(1)) AS [C12], 
+        3 AS [C13], 
+        [Extent6].[UserId] AS [UserId], 
+        [Extent6].[LoginProvider] AS [LoginProvider], 
+        [Extent6].[ProviderKey] AS [ProviderKey], 
+        [Extent6].[ApplicationUser_Id] AS [ApplicationUser_Id]
+        FROM   (SELECT TOP (1) 
+            [Extent5].[Id] AS [Id], 
+            [Extent5].[IsEmailVisible] AS [IsEmailVisible], 
+            [Extent5].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Extent5].[Name] AS [Name], 
+            [Extent5].[SurName] AS [SurName], 
+            [Extent5].[CreateDate] AS [CreateDate], 
+            [Extent5].[UpdateDate] AS [UpdateDate], 
+            [Extent5].[isEmailSend] AS [isEmailSend], 
+            [Extent5].[Email] AS [Email], 
+            [Extent5].[EmailConfirmed] AS [EmailConfirmed], 
+            [Extent5].[PasswordHash] AS [PasswordHash], 
+            [Extent5].[SecurityStamp] AS [SecurityStamp], 
+            [Extent5].[PhoneNumber] AS [PhoneNumber], 
+            [Extent5].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Extent5].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Extent5].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Extent5].[LockoutEnabled] AS [LockoutEnabled], 
+            [Extent5].[AccessFailedCount] AS [AccessFailedCount], 
+            [Extent5].[UserName] AS [UserName]
+            FROM [dbo].[ApplicationUsers] AS [Extent5]
+            WHERE [Extent5].[Id] = @p__linq__0 ) AS [Limit3]
+        INNER JOIN [dbo].[IdentityUserLogins] AS [Extent6] ON [Limit3].[Id] = [Extent6].[ApplicationUser_Id]) AS [UnionAll2]
+    ORDER BY [UnionAll2].[C3] ASC, [UnionAll2].[C1] ASC
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	-- p__linq__0: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:32	INFO:	-- Executing asynchronously at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	-- Completed in 3 ms with result: SqlDataReader
+
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	Closed connection at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	Opened connection at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	SELECT 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name]
+    FROM [dbo].[IdentityRoles] AS [Extent1]
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	-- Executing at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	Closed connection at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	Opened connection asynchronously at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	SELECT 
+    [UnionAll2].[C2] AS [C1], 
+    [UnionAll2].[C3] AS [C2], 
+    [UnionAll2].[C4] AS [C3], 
+    [UnionAll2].[C5] AS [C4], 
+    [UnionAll2].[C6] AS [C5], 
+    [UnionAll2].[C7] AS [C6], 
+    [UnionAll2].[C8] AS [C7], 
+    [UnionAll2].[C9] AS [C8], 
+    [UnionAll2].[C10] AS [C9], 
+    [UnionAll2].[C11] AS [C10], 
+    [UnionAll2].[C12] AS [C11], 
+    [UnionAll2].[C13] AS [C12], 
+    [UnionAll2].[C14] AS [C13], 
+    [UnionAll2].[C15] AS [C14], 
+    [UnionAll2].[C16] AS [C15], 
+    [UnionAll2].[C17] AS [C16], 
+    [UnionAll2].[C18] AS [C17], 
+    [UnionAll2].[C19] AS [C18], 
+    [UnionAll2].[C20] AS [C19], 
+    [UnionAll2].[C21] AS [C20], 
+    [UnionAll2].[C1] AS [C21], 
+    [UnionAll2].[C22] AS [C22], 
+    [UnionAll2].[C23] AS [C23], 
+    [UnionAll2].[C24] AS [C24], 
+    [UnionAll2].[C25] AS [C25], 
+    [UnionAll2].[C26] AS [C26], 
+    [UnionAll2].[C27] AS [C27], 
+    [UnionAll2].[C28] AS [C28], 
+    [UnionAll2].[C29] AS [C29], 
+    [UnionAll2].[C30] AS [C30], 
+    [UnionAll2].[C31] AS [C31], 
+    [UnionAll2].[C32] AS [C32], 
+    [UnionAll2].[C33] AS [C33], 
+    [UnionAll2].[C34] AS [C34], 
+    [UnionAll2].[C35] AS [C35], 
+    [UnionAll2].[C36] AS [C36], 
+    [UnionAll2].[C37] AS [C37]
+    FROM  (SELECT 
+        [UnionAll1].[C1] AS [C1], 
+        [UnionAll1].[AccessFailedCount] AS [C2], 
+        [UnionAll1].[Id] AS [C3], 
+        [UnionAll1].[IsEmailVisible] AS [C4], 
+        [UnionAll1].[IsEmailVisibleForTeam] AS [C5], 
+        [UnionAll1].[Name] AS [C6], 
+        [UnionAll1].[SurName] AS [C7], 
+        [UnionAll1].[CreateDate] AS [C8], 
+        [UnionAll1].[UpdateDate] AS [C9], 
+        [UnionAll1].[isEmailSend] AS [C10], 
+        [UnionAll1].[Email] AS [C11], 
+        [UnionAll1].[EmailConfirmed] AS [C12], 
+        [UnionAll1].[PasswordHash] AS [C13], 
+        [UnionAll1].[SecurityStamp] AS [C14], 
+        [UnionAll1].[PhoneNumber] AS [C15], 
+        [UnionAll1].[PhoneNumberConfirmed] AS [C16], 
+        [UnionAll1].[TwoFactorEnabled] AS [C17], 
+        [UnionAll1].[LockoutEndDateUtc] AS [C18], 
+        [UnionAll1].[LockoutEnabled] AS [C19], 
+        [UnionAll1].[AccessFailedCount1] AS [C20], 
+        [UnionAll1].[UserName] AS [C21], 
+        [UnionAll1].[C2] AS [C22], 
+        [UnionAll1].[RoleId] AS [C23], 
+        [UnionAll1].[UserId] AS [C24], 
+        [UnionAll1].[ApplicationUser_Id] AS [C25], 
+        [UnionAll1].[IdentityRole_Id] AS [C26], 
+        [UnionAll1].[C3] AS [C27], 
+        [UnionAll1].[C4] AS [C28], 
+        [UnionAll1].[C5] AS [C29], 
+        [UnionAll1].[C6] AS [C30], 
+        [UnionAll1].[C7] AS [C31], 
+        [UnionAll1].[C8] AS [C32], 
+        [UnionAll1].[C9] AS [C33], 
+        [UnionAll1].[C10] AS [C34], 
+        [UnionAll1].[C11] AS [C35], 
+        [UnionAll1].[C12] AS [C36], 
+        [UnionAll1].[C13] AS [C37]
+        FROM  (SELECT 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C1], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit1].[Id] AS [Id], 
+            [Limit1].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit1].[Name] AS [Name], 
+            [Limit1].[SurName] AS [SurName], 
+            [Limit1].[CreateDate] AS [CreateDate], 
+            [Limit1].[UpdateDate] AS [UpdateDate], 
+            [Limit1].[isEmailSend] AS [isEmailSend], 
+            [Limit1].[Email] AS [Email], 
+            [Limit1].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit1].[PasswordHash] AS [PasswordHash], 
+            [Limit1].[SecurityStamp] AS [SecurityStamp], 
+            [Limit1].[PhoneNumber] AS [PhoneNumber], 
+            [Limit1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit1].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit1].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit1].[UserName] AS [UserName], 
+            CASE WHEN ([Extent2].[RoleId] IS NULL) THEN CAST(NULL AS int) ELSE 1 END AS [C2], 
+            [Extent2].[RoleId] AS [RoleId], 
+            [Extent2].[UserId] AS [UserId], 
+            [Extent2].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            [Extent2].[IdentityRole_Id] AS [IdentityRole_Id], 
+            CAST(NULL AS int) AS [C3], 
+            CAST(NULL AS int) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            CAST(NULL AS varchar(1)) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS int) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11], 
+            CAST(NULL AS varchar(1)) AS [C12], 
+            CAST(NULL AS varchar(1)) AS [C13]
+            FROM   (SELECT TOP (1) 
+                [Extent1].[Id] AS [Id], 
+                [Extent1].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent1].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent1].[Name] AS [Name], 
+                [Extent1].[SurName] AS [SurName], 
+                [Extent1].[CreateDate] AS [CreateDate], 
+                [Extent1].[UpdateDate] AS [UpdateDate], 
+                [Extent1].[isEmailSend] AS [isEmailSend], 
+                [Extent1].[Email] AS [Email], 
+                [Extent1].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent1].[PasswordHash] AS [PasswordHash], 
+                [Extent1].[SecurityStamp] AS [SecurityStamp], 
+                [Extent1].[PhoneNumber] AS [PhoneNumber], 
+                [Extent1].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent1].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent1].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent1].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent1].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent1].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent1]
+                WHERE [Extent1].[Id] = @p__linq__0 ) AS [Limit1]
+            LEFT OUTER JOIN [dbo].[IdentityUserRoles] AS [Extent2] ON [Limit1].[Id] = [Extent2].[ApplicationUser_Id]
+        UNION ALL
+            SELECT 
+            2 AS [C1], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount], 
+            [Limit2].[Id] AS [Id], 
+            [Limit2].[IsEmailVisible] AS [IsEmailVisible], 
+            [Limit2].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Limit2].[Name] AS [Name], 
+            [Limit2].[SurName] AS [SurName], 
+            [Limit2].[CreateDate] AS [CreateDate], 
+            [Limit2].[UpdateDate] AS [UpdateDate], 
+            [Limit2].[isEmailSend] AS [isEmailSend], 
+            [Limit2].[Email] AS [Email], 
+            [Limit2].[EmailConfirmed] AS [EmailConfirmed], 
+            [Limit2].[PasswordHash] AS [PasswordHash], 
+            [Limit2].[SecurityStamp] AS [SecurityStamp], 
+            [Limit2].[PhoneNumber] AS [PhoneNumber], 
+            [Limit2].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Limit2].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Limit2].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Limit2].[LockoutEnabled] AS [LockoutEnabled], 
+            [Limit2].[AccessFailedCount] AS [AccessFailedCount1], 
+            [Limit2].[UserName] AS [UserName], 
+            CAST(NULL AS int) AS [C2], 
+            CAST(NULL AS varchar(1)) AS [C3], 
+            CAST(NULL AS varchar(1)) AS [C4], 
+            CAST(NULL AS varchar(1)) AS [C5], 
+            CAST(NULL AS varchar(1)) AS [C6], 
+            [Extent4].[Id] AS [Id1], 
+            [Extent4].[Id] AS [Id2], 
+            [Extent4].[UserId] AS [UserId], 
+            [Extent4].[ClaimType] AS [ClaimType], 
+            [Extent4].[ClaimValue] AS [ClaimValue], 
+            [Extent4].[ApplicationUser_Id] AS [ApplicationUser_Id], 
+            CAST(NULL AS int) AS [C7], 
+            CAST(NULL AS varchar(1)) AS [C8], 
+            CAST(NULL AS varchar(1)) AS [C9], 
+            CAST(NULL AS varchar(1)) AS [C10], 
+            CAST(NULL AS varchar(1)) AS [C11]
+            FROM   (SELECT TOP (1) 
+                [Extent3].[Id] AS [Id], 
+                [Extent3].[IsEmailVisible] AS [IsEmailVisible], 
+                [Extent3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+                [Extent3].[Name] AS [Name], 
+                [Extent3].[SurName] AS [SurName], 
+                [Extent3].[CreateDate] AS [CreateDate], 
+                [Extent3].[UpdateDate] AS [UpdateDate], 
+                [Extent3].[isEmailSend] AS [isEmailSend], 
+                [Extent3].[Email] AS [Email], 
+                [Extent3].[EmailConfirmed] AS [EmailConfirmed], 
+                [Extent3].[PasswordHash] AS [PasswordHash], 
+                [Extent3].[SecurityStamp] AS [SecurityStamp], 
+                [Extent3].[PhoneNumber] AS [PhoneNumber], 
+                [Extent3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+                [Extent3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+                [Extent3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+                [Extent3].[LockoutEnabled] AS [LockoutEnabled], 
+                [Extent3].[AccessFailedCount] AS [AccessFailedCount], 
+                [Extent3].[UserName] AS [UserName]
+                FROM [dbo].[ApplicationUsers] AS [Extent3]
+                WHERE [Extent3].[Id] = @p__linq__0 ) AS [Limit2]
+            INNER JOIN [dbo].[IdentityUserClaims] AS [Extent4] ON [Limit2].[Id] = [Extent4].[ApplicationUser_Id]) AS [UnionAll1]
+    UNION ALL
+        SELECT 
+        3 AS [C1], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount], 
+        [Limit3].[Id] AS [Id], 
+        [Limit3].[IsEmailVisible] AS [IsEmailVisible], 
+        [Limit3].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+        [Limit3].[Name] AS [Name], 
+        [Limit3].[SurName] AS [SurName], 
+        [Limit3].[CreateDate] AS [CreateDate], 
+        [Limit3].[UpdateDate] AS [UpdateDate], 
+        [Limit3].[isEmailSend] AS [isEmailSend], 
+        [Limit3].[Email] AS [Email], 
+        [Limit3].[EmailConfirmed] AS [EmailConfirmed], 
+        [Limit3].[PasswordHash] AS [PasswordHash], 
+        [Limit3].[SecurityStamp] AS [SecurityStamp], 
+        [Limit3].[PhoneNumber] AS [PhoneNumber], 
+        [Limit3].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+        [Limit3].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+        [Limit3].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+        [Limit3].[LockoutEnabled] AS [LockoutEnabled], 
+        [Limit3].[AccessFailedCount] AS [AccessFailedCount1], 
+        [Limit3].[UserName] AS [UserName], 
+        CAST(NULL AS int) AS [C2], 
+        CAST(NULL AS varchar(1)) AS [C3], 
+        CAST(NULL AS varchar(1)) AS [C4], 
+        CAST(NULL AS varchar(1)) AS [C5], 
+        CAST(NULL AS varchar(1)) AS [C6], 
+        CAST(NULL AS int) AS [C7], 
+        CAST(NULL AS int) AS [C8], 
+        CAST(NULL AS varchar(1)) AS [C9], 
+        CAST(NULL AS varchar(1)) AS [C10], 
+        CAST(NULL AS varchar(1)) AS [C11], 
+        CAST(NULL AS varchar(1)) AS [C12], 
+        3 AS [C13], 
+        [Extent6].[UserId] AS [UserId], 
+        [Extent6].[LoginProvider] AS [LoginProvider], 
+        [Extent6].[ProviderKey] AS [ProviderKey], 
+        [Extent6].[ApplicationUser_Id] AS [ApplicationUser_Id]
+        FROM   (SELECT TOP (1) 
+            [Extent5].[Id] AS [Id], 
+            [Extent5].[IsEmailVisible] AS [IsEmailVisible], 
+            [Extent5].[IsEmailVisibleForTeam] AS [IsEmailVisibleForTeam], 
+            [Extent5].[Name] AS [Name], 
+            [Extent5].[SurName] AS [SurName], 
+            [Extent5].[CreateDate] AS [CreateDate], 
+            [Extent5].[UpdateDate] AS [UpdateDate], 
+            [Extent5].[isEmailSend] AS [isEmailSend], 
+            [Extent5].[Email] AS [Email], 
+            [Extent5].[EmailConfirmed] AS [EmailConfirmed], 
+            [Extent5].[PasswordHash] AS [PasswordHash], 
+            [Extent5].[SecurityStamp] AS [SecurityStamp], 
+            [Extent5].[PhoneNumber] AS [PhoneNumber], 
+            [Extent5].[PhoneNumberConfirmed] AS [PhoneNumberConfirmed], 
+            [Extent5].[TwoFactorEnabled] AS [TwoFactorEnabled], 
+            [Extent5].[LockoutEndDateUtc] AS [LockoutEndDateUtc], 
+            [Extent5].[LockoutEnabled] AS [LockoutEnabled], 
+            [Extent5].[AccessFailedCount] AS [AccessFailedCount], 
+            [Extent5].[UserName] AS [UserName]
+            FROM [dbo].[ApplicationUsers] AS [Extent5]
+            WHERE [Extent5].[Id] = @p__linq__0 ) AS [Limit3]
+        INNER JOIN [dbo].[IdentityUserLogins] AS [Extent6] ON [Limit3].[Id] = [Extent6].[ApplicationUser_Id]) AS [UnionAll2]
+    ORDER BY [UnionAll2].[C3] ASC, [UnionAll2].[C1] ASC
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	-- p__linq__0: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:32	INFO:	-- Executing asynchronously at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:32	INFO:	-- Completed in 1 ms with result: SqlDataReader
+
+2015-08-13 00:04:32	INFO:	
+
+2015-08-13 00:04:32	INFO:	Closed connection at 2015-08-13 00:04:32 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	SELECT 
+    [Limit1].[TranslationId] AS [TranslationId], 
+    [Limit1].[TranslationId1] AS [TranslationId1], 
+    [Limit1].[UserRole] AS [UserRole], 
+    [Limit1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Limit1].[IsTranslationPremium] AS [IsTranslationPremium], 
+    [Limit1].[Id] AS [Id]
+    FROM ( SELECT TOP (1) 
+        [Filter1].[TranslationId1] AS [TranslationId], 
+        [Filter1].[UserRole] AS [UserRole], 
+        [Filter1].[TranslationId2] AS [TranslationId1], 
+        [Filter1].[IsTranslationPremium] AS [IsTranslationPremium], 
+        [Filter1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+        [Extent4].[Id] AS [Id]
+        FROM   (SELECT [Extent1].[TranslationId] AS [TranslationId1], [Extent1].[ApplicationUserId] AS [ApplicationUserId], [Extent1].[UserRole] AS [UserRole], [Extent2].[TranslationId] AS [TranslationId2], [Extent2].[Id] AS [Id1], [Extent2].[IsTranslationPremium] AS [IsTranslationPremium], [Extent3].[GamePhraseVersionId] AS [GamePhraseVersionId], [Extent3].[Id] AS [Id2], [Extent3].[GameVersionTreeId_GameVersionTreeId] AS [GameVersionTreeId_GameVersionTreeId]
+            FROM   [dbo].[TranslationUsers] AS [Extent1]
+            INNER JOIN [dbo].[Translations] AS [Extent2] ON [Extent1].[TranslationId] = [Extent2].[TranslationId]
+            INNER JOIN [dbo].[GamePhraseVersions] AS [Extent3] ON [Extent2].[GameVersionId] = [Extent3].[GameVersionId]
+            WHERE ([Extent1].[IsAccept] = 1) AND ([Extent1].[IsActive] = 1) AND ([Extent2].[IsActive] = 1) ) AS [Filter1]
+        LEFT OUTER JOIN [dbo].[GameVersionTrees] AS [Extent4] ON [Filter1].[GameVersionTreeId_GameVersionTreeId] = [Extent4].[GameVersionTreeId]
+        WHERE ([Filter1].[ApplicationUserId] = @p__linq__0) AND ([Filter1].[Id1] = @p__linq__1) AND ([Filter1].[Id2] = @p__linq__2)
+    )  AS [Limit1]
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- p__linq__0: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__1: '9a29dcfc-5150-4ee7-a7d4-ef985147131d' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__2: '03ba585c-0946-4256-8860-6034e442a655' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 2 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	SELECT TOP (1) 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IsTranslationPremium] AS [IsTranslationPremium], 
+    [Extent1].[IsTranslationClosed] AS [IsTranslationClosed], 
+    [Extent1].[GameVersionId] AS [GameVersionId], 
+    [Extent1].[GameId] AS [GameId], 
+    [Extent1].[LanguageId] AS [LanguageId], 
+    [Extent1].[CreateDate] AS [CreateDate], 
+    [Extent1].[UpdateDate] AS [UpdateDate], 
+    [Extent1].[TranslationPhraseLastUpdateDate] AS [TranslationPhraseLastUpdateDate], 
+    [Extent1].[Statistics_PhraseTotalCount] AS [Statistics_PhraseTotalCount], 
+    [Extent1].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount], 
+    [Extent1].[IsDeleteRequest] AS [IsDeleteRequest], 
+    [Extent1].[IsActive] AS [IsActive], 
+    [Extent1].[TranslationPack_CreateDate] AS [TranslationPack_CreateDate], 
+    [Extent1].[TranslationPack_Path] AS [TranslationPack_Path], 
+    [Extent1].[TranslationPack_Status] AS [TranslationPack_Status], 
+    [Extent1].[TranslationPack_IsUpToDate] AS [TranslationPack_IsUpToDate], 
+    [Extent2].[TranslationUserId] AS [TranslationUserId], 
+    [Extent2].[Id] AS [Id1], 
+    [Extent2].[TranslationId] AS [TranslationId1], 
+    [Extent2].[ApplicationUserId] AS [ApplicationUserId], 
+    [Extent2].[UserRole] AS [UserRole], 
+    [Extent2].[Statistics_PhraseTotalCount] AS [Statistics_PhraseTotalCount1], 
+    [Extent2].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount1], 
+    [Extent2].[IsAccept] AS [IsAccept], 
+    [Extent2].[IsActive] AS [IsActive1], 
+    [Extent2].[CreateDate] AS [CreateDate1], 
+    [Extent2].[ApproveDate] AS [ApproveDate], 
+    [Extent2].[RemoveDate] AS [RemoveDate]
+    FROM  [dbo].[Translations] AS [Extent1]
+    INNER JOIN [dbo].[TranslationUsers] AS [Extent2] ON [Extent1].[TranslationId] = [Extent2].[TranslationId]
+    WHERE ([Extent1].[Id] = @p__linq__0) AND ([Extent1].[IsActive] = 1) AND ([Extent2].[ApplicationUserId] = @p__linq__1) AND ([Extent2].[IsAccept] = 1) AND ([Extent2].[IsActive] = 1)
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- p__linq__0: '9a29dcfc-5150-4ee7-a7d4-ef985147131d' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	SELECT 
+    [Limit1].[TranslationPhraseId] AS [TranslationPhraseId], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[TranslationId] AS [TranslationId], 
+    [Limit1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Limit1].[ApplicationUserId] AS [ApplicationUserId], 
+    [Limit1].[CreateDate] AS [CreateDate], 
+    [Limit1].[UpdateDate] AS [UpdateDate], 
+    [Limit1].[Value] AS [Value], 
+    [Limit1].[Status] AS [Status], 
+    [Limit1].[IsReported] AS [IsReported], 
+    [Limit1].[ReferenceTranslationPhrase_TranslationPhraseId] AS [ReferenceTranslationPhrase_TranslationPhraseId]
+    FROM ( SELECT TOP (1) 
+        [Extent1].[TranslationPhraseId] AS [TranslationPhraseId], 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[TranslationId] AS [TranslationId], 
+        [Extent1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+        [Extent1].[ApplicationUserId] AS [ApplicationUserId], 
+        [Extent1].[CreateDate] AS [CreateDate], 
+        [Extent1].[UpdateDate] AS [UpdateDate], 
+        [Extent1].[Value] AS [Value], 
+        [Extent1].[Status] AS [Status], 
+        [Extent1].[IsReported] AS [IsReported], 
+        [Extent1].[ReferenceTranslationPhrase_TranslationPhraseId] AS [ReferenceTranslationPhrase_TranslationPhraseId]
+        FROM [dbo].[TranslationPhrases] AS [Extent1]
+        WHERE (((3 = @p__linq__0) AND (([Extent1].[ApplicationUserId] = @p__linq__1) OR (([Extent1].[ApplicationUserId] IS NULL) AND (@p__linq__1 IS NULL))) AND (1 =  CAST( [Extent1].[Status] AS int))) OR ((3 <> @p__linq__2) AND ([Extent1].[ApplicationUserId] IS NULL) AND (2 =  CAST( [Extent1].[Status] AS int)))) AND ([Extent1].[GamePhraseVersionId] = @p__linq__3) AND ([Extent1].[TranslationId] = @p__linq__4)
+    )  AS [Limit1]
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__2: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__3: '32960' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__4: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	SELECT 
+    [Extent1].[TranslationTreeCounterId] AS [TranslationTreeCounterId], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ParentId] AS [ParentId], 
+    [Extent1].[GameVersionTreeId] AS [GameVersionTreeId], 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[ProposalItemsCountWithChildren] AS [ProposalItemsCountWithChildren], 
+    [Extent1].[AcceptedItemsCountWithChildren] AS [AcceptedItemsCountWithChildren], 
+    [Extent1].[NewProposalItemsCountWithChildren] AS [NewProposalItemsCountWithChildren], 
+    [Extent1].[ReportedItemsCountWithChildren] AS [ReportedItemsCountWithChildren]
+    FROM [dbo].[TranslationTreeCounters] AS [Extent1]
+    WHERE ([Extent1].[ParentId] = @p__linq__0) AND ([Extent1].[TranslationId] = @p__linq__1)
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- p__linq__0: 'ffcf11ad-0335-4c78-a516-c3eb139d47f2' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__1: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	SELECT 
+    [Extent1].[GameVersionTreeId] AS [GameVersionTreeId], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ParentId] AS [ParentId], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[Level] AS [Level], 
+    [Extent1].[GameVersionId] AS [GameVersionId], 
+    [Extent1].[HasChildren] AS [HasChildren], 
+    [Extent1].[ItemsCount] AS [ItemsCount], 
+    [Extent1].[ItemsCountWithChildren] AS [ItemsCountWithChildren]
+    FROM [dbo].[GameVersionTrees] AS [Extent1]
+    WHERE [Extent1].[ParentId] = @p__linq__0
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- p__linq__0: 'ffcf11ad-0335-4c78-a516-c3eb139d47f2' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 1 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Started transaction at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	SELECT 
+    [Extent1].[TranslationTreeCounterId] AS [TranslationTreeCounterId], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ParentId] AS [ParentId], 
+    [Extent1].[GameVersionTreeId] AS [GameVersionTreeId], 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[ProposalItemsCountWithChildren] AS [ProposalItemsCountWithChildren], 
+    [Extent1].[AcceptedItemsCountWithChildren] AS [AcceptedItemsCountWithChildren], 
+    [Extent1].[NewProposalItemsCountWithChildren] AS [NewProposalItemsCountWithChildren], 
+    [Extent1].[ReportedItemsCountWithChildren] AS [ReportedItemsCountWithChildren]
+    FROM [dbo].[TranslationTreeCounters] AS [Extent1]
+    WHERE ([Extent1].[ParentId] = @p__linq__0) AND ([Extent1].[TranslationId] = @p__linq__1)
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- p__linq__0: 'e1923c96-b750-4588-9ee7-b42d90db7877' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__1: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	SELECT 
+    [Extent1].[GameVersionTreeId] AS [GameVersionTreeId], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ParentId] AS [ParentId], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[Level] AS [Level], 
+    [Extent1].[GameVersionId] AS [GameVersionId], 
+    [Extent1].[HasChildren] AS [HasChildren], 
+    [Extent1].[ItemsCount] AS [ItemsCount], 
+    [Extent1].[ItemsCountWithChildren] AS [ItemsCountWithChildren]
+    FROM [dbo].[GameVersionTrees] AS [Extent1]
+    WHERE [Extent1].[ParentId] = @p__linq__0
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- p__linq__0: 'e1923c96-b750-4588-9ee7-b42d90db7877' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	INSERT [dbo].[TranslationPhrases]([Id], [TranslationId], [GamePhraseVersionId], [ApplicationUserId], [CreateDate], [UpdateDate], [Value], [Status], [IsReported], [ReferenceTranslationPhrase_TranslationPhraseId])
+VALUES (@0, @1, @2, NULL, @3, @4, @5, @6, @7, NULL)
+SELECT [TranslationPhraseId]
+FROM [dbo].[TranslationPhrases]
+WHERE @@ROWCOUNT > 0 AND [TranslationPhraseId] = scope_identity()
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- @0: 'a9aa3b7e-5adc-4a69-b08b-e2f5d6655cbb' (Type = Guid)
+
+2015-08-13 00:04:46	INFO:	-- @1: '1' (Type = Int32)
+
+2015-08-13 00:04:46	INFO:	-- @2: '32960' (Type = Int32)
+
+2015-08-13 00:04:46	INFO:	-- @3: '2015-08-13 00:04:46' (Type = DateTime2)
+
+2015-08-13 00:04:46	INFO:	-- @4: '2015-08-13 00:04:46' (Type = DateTime2)
+
+2015-08-13 00:04:46	INFO:	-- @5: 'das' (Type = String, Size = -1)
+
+2015-08-13 00:04:46	INFO:	-- @6: '2' (Type = Int32)
+
+2015-08-13 00:04:46	INFO:	-- @7: 'False' (Type = Boolean)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	Committed transaction at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	SELECT 
+    [Limit1].[TranslationId] AS [TranslationId], 
+    [Limit1].[GameVersionId] AS [GameVersionId], 
+    [Limit1].[TranslationId1] AS [TranslationId1], 
+    [Limit1].[GameVersionTreeId] AS [GameVersionTreeId], 
+    [Limit1].[UserRole] AS [UserRole], 
+    [Limit1].[LanguageId] AS [LanguageId]
+    FROM ( SELECT TOP (1) 
+        [Filter1].[TranslationId1] AS [TranslationId], 
+        [Filter1].[UserRole] AS [UserRole], 
+        [Filter1].[TranslationId2] AS [TranslationId1], 
+        [Filter1].[LanguageId] AS [LanguageId], 
+        [Extent3].[GameVersionTreeId] AS [GameVersionTreeId], 
+        [Extent3].[GameVersionId] AS [GameVersionId]
+        FROM   (SELECT [Extent1].[TranslationId] AS [TranslationId1], [Extent1].[ApplicationUserId] AS [ApplicationUserId], [Extent1].[UserRole] AS [UserRole], [Extent2].[TranslationId] AS [TranslationId2], [Extent2].[Id] AS [Id1], [Extent2].[GameVersionId] AS [GameVersionId], [Extent2].[LanguageId] AS [LanguageId]
+            FROM  [dbo].[TranslationUsers] AS [Extent1]
+            INNER JOIN [dbo].[Translations] AS [Extent2] ON [Extent1].[TranslationId] = [Extent2].[TranslationId]
+            WHERE ([Extent1].[IsAccept] = 1) AND ([Extent2].[IsActive] = 1) AND ([Extent1].[IsActive] = 1) ) AS [Filter1]
+        INNER JOIN [dbo].[GameVersionTrees] AS [Extent3] ON [Filter1].[GameVersionId] = [Extent3].[GameVersionId]
+        WHERE ([Extent3].[Id] = @p__linq__0) AND ([Filter1].[ApplicationUserId] = @p__linq__1) AND ([Filter1].[Id1] = @p__linq__2)
+    )  AS [Limit1]
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- p__linq__0: 'be17e95d-a7e4-40f9-8374-6cb0112d27a0' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__2: '9a29dcfc-5150-4ee7-a7d4-ef985147131d' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 7 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	SELECT 
+    [Extent1].[GamePhraseId] AS [GamePhraseId], 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Extent1].[Phrase] AS [Phrase], 
+    [Extent1].[OriginalTranslation] AS [OriginalTranslation], 
+    [Extent2].[OriginalTranslation] AS [OriginalTranslation1], 
+    [Extent1].[SituationDescription] AS [SituationDescription], 
+    [Extent2].[SituationDescription] AS [SituationDescription1]
+    FROM  [dbo].[GamePhrases] AS [Extent1]
+    INNER JOIN [dbo].[GamePhraseVersions] AS [Extent2] ON [Extent1].[GamePhraseId] = [Extent2].[GamePhraseId]
+    WHERE ([Extent2].[GameVersionId] = @p__linq__0) AND ([Extent2].[GameVersionTreeId_GameVersionTreeId] = @p__linq__1)
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- p__linq__1: '16154' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:46	INFO:	-- Executing at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:46	INFO:	
+
+2015-08-13 00:04:46	INFO:	Closed connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:46	INFO:	Opened connection at 2015-08-13 00:04:46 +02:00
+
+2015-08-13 00:04:47	INFO:	SELECT 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[Status] AS [Status], 
+    [Extent1].[ApplicationUserId] AS [ApplicationUserId], 
+    [Extent1].[Id] AS [Id]
+    FROM [dbo].[TranslationPhrases] AS [Extent1]
+    WHERE ([Extent1].[TranslationId] = @p__linq__0) AND (([Extent1].[ApplicationUserId] = @p__linq__1) OR (([Extent1].[ApplicationUserId] IS NULL) AND (@p__linq__1 IS NULL)) OR (([Extent1].[ApplicationUserId] IS NULL) AND (2 =  CAST( [Extent1].[Status] AS int)))) AND ([Extent1].[GamePhraseVersionId] IN (32957, 32958, 32959, 32960, 32961, 32962, 32963, 32964, 32965, 32966, 32967, 32968, 32969, 32970, 32971, 32972, 32973, 32974, 32975, 32976, 32977, 32978, 32979, 32980, 32981, 32982, 32983, 32984, 32985, 32986, 32987, 32988, 32989, 32990, 32991, 32992, 32993, 32994, 32995, 32996, 32997, 32998, 32999, 33000, 33001, 33002, 33003, 33004, 33005, 33006, 33007, 33008, 33009, 33010, 33011, 33012, 33013, 33014, 33015, 33016, 33017, 33018, 33019))
+2015-08-13 00:04:47	INFO:	
+
+2015-08-13 00:04:47	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:47	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:47	INFO:	-- Executing at 2015-08-13 00:04:47 +02:00
+
+2015-08-13 00:04:47	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:47	INFO:	
+
+2015-08-13 00:04:47	INFO:	Closed connection at 2015-08-13 00:04:47 +02:00
+
+2015-08-13 00:04:47	INFO:	Opened connection at 2015-08-13 00:04:47 +02:00
+
+2015-08-13 00:04:47	INFO:	SELECT 
+    [Project1].[TranslationPhraseId] AS [TranslationPhraseId], 
+    [Project1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Project1].[ApplicationUserId] AS [ApplicationUserId], 
+    [Project1].[Value] AS [Value], 
+    [Project1].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount], 
+    [Project1].[UpdateDate] AS [UpdateDate], 
+    [Project1].[UserName] AS [UserName], 
+    [Project1].[Id] AS [Id]
+    FROM ( SELECT 
+        [Filter1].[TranslationPhraseId] AS [TranslationPhraseId], 
+        [Filter1].[Id1] AS [Id], 
+        [Filter1].[GamePhraseVersionId1] AS [GamePhraseVersionId], 
+        [Filter1].[ApplicationUserId1] AS [ApplicationUserId], 
+        [Filter1].[UpdateDate1] AS [UpdateDate], 
+        [Filter1].[Value] AS [Value], 
+        [Filter1].[Statistics_PhraseTranslatedCount1] AS [Statistics_PhraseTranslatedCount], 
+        [Filter1].[UserName] AS [UserName]
+        FROM ( SELECT [Extent1].[TranslationPhraseId] AS [TranslationPhraseId], [Extent1].[Id] AS [Id1], [Extent1].[GamePhraseVersionId] AS [GamePhraseVersionId1], [Extent1].[ApplicationUserId] AS [ApplicationUserId1], [Extent1].[UpdateDate] AS [UpdateDate1], [Extent1].[Value] AS [Value], [Extent2].[TranslationId] AS [TranslationId1], [Extent2].[LanguageId] AS [LanguageId], [Extent4].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount1], [Extent5].[UserName] AS [UserName], [Extent6].[Id] AS [Id2]
+            FROM      [dbo].[TranslationPhrases] AS [Extent1]
+            INNER JOIN [dbo].[Translations] AS [Extent2] ON [Extent1].[TranslationId] = [Extent2].[TranslationId]
+            INNER JOIN [dbo].[GamePhraseVersions] AS [Extent3] ON [Extent1].[GamePhraseVersionId] = [Extent3].[GamePhraseVersionId]
+            INNER JOIN [dbo].[TranslationUsers] AS [Extent4] ON ([Extent1].[TranslationId] = [Extent4].[TranslationId]) AND ([Extent1].[ApplicationUserId] = [Extent4].[ApplicationUserId])
+            INNER JOIN [dbo].[ApplicationUsers] AS [Extent5] ON [Extent1].[ApplicationUserId] = [Extent5].[Id]
+            LEFT OUTER JOIN [dbo].[GameVersionTrees] AS [Extent6] ON [Extent3].[GameVersionTreeId_GameVersionTreeId] = [Extent6].[GameVersionTreeId]
+            WHERE (1 =  CAST( [Extent1].[Status] AS int)) AND ([Extent4].[IsAccept] = 1) AND ([Extent4].[IsActive] = 1)
+        )  AS [Filter1]
+        WHERE ([Filter1].[Id2] = @p__linq__0) AND ( NOT (([Filter1].[ApplicationUserId1] = @p__linq__1) AND ((CASE WHEN ([Filter1].[ApplicationUserId1] IS NULL) THEN cast(1 as bit) ELSE cast(0 as bit) END) = (CASE WHEN (@p__linq__1 IS NULL) THEN cast(1 as bit) ELSE cast(0 as bit) END)))) AND ([Filter1].[TranslationId1] = @p__linq__2) AND ([Filter1].[LanguageId] = @p__linq__3)
+    )  AS [Project1]
+    ORDER BY [Project1].[Statistics_PhraseTranslatedCount] DESC
+2015-08-13 00:04:47	INFO:	
+
+2015-08-13 00:04:47	INFO:	-- p__linq__0: 'be17e95d-a7e4-40f9-8374-6cb0112d27a0' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:47	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:47	INFO:	-- p__linq__2: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:47	INFO:	-- p__linq__3: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:47	INFO:	-- Executing at 2015-08-13 00:04:47 +02:00
+
+2015-08-13 00:04:47	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:47	INFO:	
+
+2015-08-13 00:04:47	INFO:	Closed connection at 2015-08-13 00:04:47 +02:00
+
+2015-08-13 00:04:51	INFO:	Opened connection at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	SELECT 
+    [Limit1].[TranslationPhraseId] AS [TranslationPhraseId], 
+    [Limit1].[Id] AS [Id], 
+    [Limit1].[TranslationId] AS [TranslationId], 
+    [Limit1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Limit1].[ApplicationUserId] AS [ApplicationUserId], 
+    [Limit1].[CreateDate] AS [CreateDate], 
+    [Limit1].[UpdateDate] AS [UpdateDate], 
+    [Limit1].[Value] AS [Value], 
+    [Limit1].[Status] AS [Status], 
+    [Limit1].[IsReported] AS [IsReported], 
+    [Limit1].[ReferenceTranslationPhrase_TranslationPhraseId] AS [ReferenceTranslationPhrase_TranslationPhraseId]
+    FROM ( SELECT TOP (1) 
+        [Extent1].[TranslationPhraseId] AS [TranslationPhraseId], 
+        [Extent1].[Id] AS [Id], 
+        [Extent1].[TranslationId] AS [TranslationId], 
+        [Extent1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+        [Extent1].[ApplicationUserId] AS [ApplicationUserId], 
+        [Extent1].[CreateDate] AS [CreateDate], 
+        [Extent1].[UpdateDate] AS [UpdateDate], 
+        [Extent1].[Value] AS [Value], 
+        [Extent1].[Status] AS [Status], 
+        [Extent1].[IsReported] AS [IsReported], 
+        [Extent1].[ReferenceTranslationPhrase_TranslationPhraseId] AS [ReferenceTranslationPhrase_TranslationPhraseId]
+        FROM [dbo].[TranslationPhrases] AS [Extent1]
+        WHERE (((3 = @p__linq__0) AND (([Extent1].[ApplicationUserId] = @p__linq__1) OR (([Extent1].[ApplicationUserId] IS NULL) AND (@p__linq__1 IS NULL))) AND (1 =  CAST( [Extent1].[Status] AS int))) OR ((3 <> @p__linq__2) AND ([Extent1].[ApplicationUserId] IS NULL) AND (2 =  CAST( [Extent1].[Status] AS int)))) AND ([Extent1].[GamePhraseVersionId] = @p__linq__3) AND ([Extent1].[TranslationId] = @p__linq__4)
+    )  AS [Limit1]
+2015-08-13 00:04:51	INFO:	
+
+2015-08-13 00:04:51	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:51	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:51	INFO:	-- p__linq__2: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:51	INFO:	-- p__linq__3: '32960' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:51	INFO:	-- p__linq__4: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:51	INFO:	-- Executing at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	-- Completed in 1 ms with result: SqlDataReader
+
+2015-08-13 00:04:51	INFO:	
+
+2015-08-13 00:04:51	INFO:	Closed connection at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	Opened connection at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	Started transaction at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	UPDATE [dbo].[TranslationPhrases]
+SET [Value] = @0
+WHERE ([TranslationPhraseId] = @1)
+
+2015-08-13 00:04:51	INFO:	-- @0: 'dassadasda' (Type = String, Size = -1)
+
+2015-08-13 00:04:51	INFO:	-- @1: '16' (Type = Int32)
+
+2015-08-13 00:04:51	INFO:	-- Executing at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	-- Completed in 2 ms with result: 1
+
+2015-08-13 00:04:51	INFO:	
+
+2015-08-13 00:04:51	INFO:	Committed transaction at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	Closed connection at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	Opened connection at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[TranslationPhrases] AS [Extent1]
+        WHERE ([Extent1].[TranslationId] = @p__linq__0) AND (([Extent1].[ApplicationUserId] = @p__linq__1) OR (([Extent1].[ApplicationUserId] IS NULL) AND (@p__linq__1 IS NULL)))
+    )  AS [GroupBy1]
+2015-08-13 00:04:51	INFO:	
+
+2015-08-13 00:04:51	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:51	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:51	INFO:	-- Executing at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	-- Completed in 3 ms with result: SqlDataReader
+
+2015-08-13 00:04:51	INFO:	
+
+2015-08-13 00:04:51	INFO:	Closed connection at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:51	INFO:	Opened connection at 2015-08-13 00:04:51 +02:00
+
+2015-08-13 00:04:52	INFO:	SELECT TOP (1) 
+    [Extent1].[TranslationUserId] AS [TranslationUserId], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[ApplicationUserId] AS [ApplicationUserId], 
+    [Extent1].[UserRole] AS [UserRole], 
+    [Extent1].[Statistics_PhraseTotalCount] AS [Statistics_PhraseTotalCount], 
+    [Extent1].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount], 
+    [Extent1].[IsAccept] AS [IsAccept], 
+    [Extent1].[IsActive] AS [IsActive], 
+    [Extent1].[CreateDate] AS [CreateDate], 
+    [Extent1].[ApproveDate] AS [ApproveDate], 
+    [Extent1].[RemoveDate] AS [RemoveDate]
+    FROM [dbo].[TranslationUsers] AS [Extent1]
+    WHERE ([Extent1].[TranslationId] = @p__linq__0) AND ([Extent1].[ApplicationUserId] = @p__linq__1)
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:52	INFO:	-- Executing at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	-- Completed in 4 ms with result: SqlDataReader
+
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	Closed connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	Opened connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	SELECT 
+    [GroupBy1].[A1] AS [C1]
+    FROM ( SELECT 
+        COUNT(1) AS [A1]
+        FROM [dbo].[TranslationPhrases] AS [Extent1]
+        WHERE ([Extent1].[TranslationId] = @p__linq__0) AND (([Extent1].[ApplicationUserId] = @p__linq__1) OR (([Extent1].[ApplicationUserId] IS NULL) AND (@p__linq__1 IS NULL)))
+    )  AS [GroupBy1]
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- p__linq__1: 'null' (Type = String, Size = 4000)
+
+2015-08-13 00:04:52	INFO:	-- Executing at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	-- Completed in 2 ms with result: SqlDataReader
+
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	Closed connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	Opened connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	SELECT TOP (1) 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[IsTranslationPremium] AS [IsTranslationPremium], 
+    [Extent1].[IsTranslationClosed] AS [IsTranslationClosed], 
+    [Extent1].[GameVersionId] AS [GameVersionId], 
+    [Extent1].[GameId] AS [GameId], 
+    [Extent1].[LanguageId] AS [LanguageId], 
+    [Extent1].[CreateDate] AS [CreateDate], 
+    [Extent1].[UpdateDate] AS [UpdateDate], 
+    [Extent1].[TranslationPhraseLastUpdateDate] AS [TranslationPhraseLastUpdateDate], 
+    [Extent1].[Statistics_PhraseTotalCount] AS [Statistics_PhraseTotalCount], 
+    [Extent1].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount], 
+    [Extent1].[IsDeleteRequest] AS [IsDeleteRequest], 
+    [Extent1].[IsActive] AS [IsActive], 
+    [Extent1].[TranslationPack_CreateDate] AS [TranslationPack_CreateDate], 
+    [Extent1].[TranslationPack_Path] AS [TranslationPack_Path], 
+    [Extent1].[TranslationPack_Status] AS [TranslationPack_Status], 
+    [Extent1].[TranslationPack_IsUpToDate] AS [TranslationPack_IsUpToDate]
+    FROM [dbo].[Translations] AS [Extent1]
+    WHERE [Extent1].[TranslationId] = @p__linq__0
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- Executing at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	Closed connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	Opened connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	Started transaction at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	UPDATE [dbo].[Translations]
+SET [Statistics_PhraseTranslatedCount] = @0
+WHERE ([TranslationId] = @1)
+
+2015-08-13 00:04:52	INFO:	-- @0: '10' (Type = Int32)
+
+2015-08-13 00:04:52	INFO:	-- @1: '1' (Type = Int32)
+
+2015-08-13 00:04:52	INFO:	-- Executing at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	-- Completed in 0 ms with result: 1
+
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	Committed transaction at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	Closed connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	Opened connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	SELECT 
+    [Limit1].[TranslationId] AS [TranslationId], 
+    [Limit1].[GameVersionId] AS [GameVersionId], 
+    [Limit1].[TranslationId1] AS [TranslationId1], 
+    [Limit1].[GameVersionTreeId] AS [GameVersionTreeId], 
+    [Limit1].[UserRole] AS [UserRole], 
+    [Limit1].[LanguageId] AS [LanguageId]
+    FROM ( SELECT TOP (1) 
+        [Filter1].[TranslationId1] AS [TranslationId], 
+        [Filter1].[UserRole] AS [UserRole], 
+        [Filter1].[TranslationId2] AS [TranslationId1], 
+        [Filter1].[LanguageId] AS [LanguageId], 
+        [Extent3].[GameVersionTreeId] AS [GameVersionTreeId], 
+        [Extent3].[GameVersionId] AS [GameVersionId]
+        FROM   (SELECT [Extent1].[TranslationId] AS [TranslationId1], [Extent1].[ApplicationUserId] AS [ApplicationUserId], [Extent1].[UserRole] AS [UserRole], [Extent2].[TranslationId] AS [TranslationId2], [Extent2].[Id] AS [Id1], [Extent2].[GameVersionId] AS [GameVersionId], [Extent2].[LanguageId] AS [LanguageId]
+            FROM  [dbo].[TranslationUsers] AS [Extent1]
+            INNER JOIN [dbo].[Translations] AS [Extent2] ON [Extent1].[TranslationId] = [Extent2].[TranslationId]
+            WHERE ([Extent1].[IsAccept] = 1) AND ([Extent2].[IsActive] = 1) AND ([Extent1].[IsActive] = 1) ) AS [Filter1]
+        INNER JOIN [dbo].[GameVersionTrees] AS [Extent3] ON [Filter1].[GameVersionId] = [Extent3].[GameVersionId]
+        WHERE ([Extent3].[Id] = @p__linq__0) AND ([Filter1].[ApplicationUserId] = @p__linq__1) AND ([Filter1].[Id1] = @p__linq__2)
+    )  AS [Limit1]
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	-- p__linq__0: 'be17e95d-a7e4-40f9-8374-6cb0112d27a0' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:52	INFO:	-- p__linq__2: '9a29dcfc-5150-4ee7-a7d4-ef985147131d' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- Executing at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	-- Completed in 3 ms with result: SqlDataReader
+
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	Closed connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	Opened connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	SELECT 
+    [Extent1].[GamePhraseId] AS [GamePhraseId], 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Extent1].[Phrase] AS [Phrase], 
+    [Extent1].[OriginalTranslation] AS [OriginalTranslation], 
+    [Extent2].[OriginalTranslation] AS [OriginalTranslation1], 
+    [Extent1].[SituationDescription] AS [SituationDescription], 
+    [Extent2].[SituationDescription] AS [SituationDescription1]
+    FROM  [dbo].[GamePhrases] AS [Extent1]
+    INNER JOIN [dbo].[GamePhraseVersions] AS [Extent2] ON [Extent1].[GamePhraseId] = [Extent2].[GamePhraseId]
+    WHERE ([Extent2].[GameVersionId] = @p__linq__0) AND ([Extent2].[GameVersionTreeId_GameVersionTreeId] = @p__linq__1)
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- p__linq__1: '16154' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- Executing at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	Closed connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	Opened connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	SELECT 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[Status] AS [Status], 
+    [Extent1].[ApplicationUserId] AS [ApplicationUserId], 
+    [Extent1].[Id] AS [Id]
+    FROM [dbo].[TranslationPhrases] AS [Extent1]
+    WHERE ([Extent1].[TranslationId] = @p__linq__0) AND (([Extent1].[ApplicationUserId] = @p__linq__1) OR (([Extent1].[ApplicationUserId] IS NULL) AND (@p__linq__1 IS NULL)) OR (([Extent1].[ApplicationUserId] IS NULL) AND (2 =  CAST( [Extent1].[Status] AS int)))) AND ([Extent1].[GamePhraseVersionId] IN (32957, 32958, 32959, 32960, 32961, 32962, 32963, 32964, 32965, 32966, 32967, 32968, 32969, 32970, 32971, 32972, 32973, 32974, 32975, 32976, 32977, 32978, 32979, 32980, 32981, 32982, 32983, 32984, 32985, 32986, 32987, 32988, 32989, 32990, 32991, 32992, 32993, 32994, 32995, 32996, 32997, 32998, 32999, 33000, 33001, 33002, 33003, 33004, 33005, 33006, 33007, 33008, 33009, 33010, 33011, 33012, 33013, 33014, 33015, 33016, 33017, 33018, 33019))
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:52	INFO:	-- Executing at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	Closed connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	Opened connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	SELECT 
+    [Project1].[TranslationPhraseId] AS [TranslationPhraseId], 
+    [Project1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Project1].[ApplicationUserId] AS [ApplicationUserId], 
+    [Project1].[Value] AS [Value], 
+    [Project1].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount], 
+    [Project1].[UpdateDate] AS [UpdateDate], 
+    [Project1].[UserName] AS [UserName], 
+    [Project1].[Id] AS [Id]
+    FROM ( SELECT 
+        [Filter1].[TranslationPhraseId] AS [TranslationPhraseId], 
+        [Filter1].[Id1] AS [Id], 
+        [Filter1].[GamePhraseVersionId1] AS [GamePhraseVersionId], 
+        [Filter1].[ApplicationUserId1] AS [ApplicationUserId], 
+        [Filter1].[UpdateDate1] AS [UpdateDate], 
+        [Filter1].[Value] AS [Value], 
+        [Filter1].[Statistics_PhraseTranslatedCount1] AS [Statistics_PhraseTranslatedCount], 
+        [Filter1].[UserName] AS [UserName]
+        FROM ( SELECT [Extent1].[TranslationPhraseId] AS [TranslationPhraseId], [Extent1].[Id] AS [Id1], [Extent1].[GamePhraseVersionId] AS [GamePhraseVersionId1], [Extent1].[ApplicationUserId] AS [ApplicationUserId1], [Extent1].[UpdateDate] AS [UpdateDate1], [Extent1].[Value] AS [Value], [Extent2].[TranslationId] AS [TranslationId1], [Extent2].[LanguageId] AS [LanguageId], [Extent4].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount1], [Extent5].[UserName] AS [UserName], [Extent6].[Id] AS [Id2]
+            FROM      [dbo].[TranslationPhrases] AS [Extent1]
+            INNER JOIN [dbo].[Translations] AS [Extent2] ON [Extent1].[TranslationId] = [Extent2].[TranslationId]
+            INNER JOIN [dbo].[GamePhraseVersions] AS [Extent3] ON [Extent1].[GamePhraseVersionId] = [Extent3].[GamePhraseVersionId]
+            INNER JOIN [dbo].[TranslationUsers] AS [Extent4] ON ([Extent1].[TranslationId] = [Extent4].[TranslationId]) AND ([Extent1].[ApplicationUserId] = [Extent4].[ApplicationUserId])
+            INNER JOIN [dbo].[ApplicationUsers] AS [Extent5] ON [Extent1].[ApplicationUserId] = [Extent5].[Id]
+            LEFT OUTER JOIN [dbo].[GameVersionTrees] AS [Extent6] ON [Extent3].[GameVersionTreeId_GameVersionTreeId] = [Extent6].[GameVersionTreeId]
+            WHERE (1 =  CAST( [Extent1].[Status] AS int)) AND ([Extent4].[IsAccept] = 1) AND ([Extent4].[IsActive] = 1)
+        )  AS [Filter1]
+        WHERE ([Filter1].[Id2] = @p__linq__0) AND ( NOT (([Filter1].[ApplicationUserId1] = @p__linq__1) AND ((CASE WHEN ([Filter1].[ApplicationUserId1] IS NULL) THEN cast(1 as bit) ELSE cast(0 as bit) END) = (CASE WHEN (@p__linq__1 IS NULL) THEN cast(1 as bit) ELSE cast(0 as bit) END)))) AND ([Filter1].[TranslationId1] = @p__linq__2) AND ([Filter1].[LanguageId] = @p__linq__3)
+    )  AS [Project1]
+    ORDER BY [Project1].[Statistics_PhraseTranslatedCount] DESC
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	-- p__linq__0: 'be17e95d-a7e4-40f9-8374-6cb0112d27a0' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:52	INFO:	-- p__linq__2: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- p__linq__3: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:52	INFO:	-- Executing at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:52	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:52	INFO:	
+
+2015-08-13 00:04:52	INFO:	Closed connection at 2015-08-13 00:04:52 +02:00
+
+2015-08-13 00:04:57	INFO:	Opened connection at 2015-08-13 00:04:57 +02:00
+
+2015-08-13 00:04:57	INFO:	SELECT TOP (1) 
+    [Extent1].[GameVersionTreeId] AS [GameVersionTreeId], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ParentId] AS [ParentId], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[Level] AS [Level], 
+    [Extent1].[GameVersionId] AS [GameVersionId], 
+    [Extent1].[HasChildren] AS [HasChildren], 
+    [Extent1].[ItemsCount] AS [ItemsCount], 
+    [Extent1].[ItemsCountWithChildren] AS [ItemsCountWithChildren]
+    FROM [dbo].[GameVersionTrees] AS [Extent1]
+    WHERE ([Extent1].[GameVersionId] = @p__linq__0) AND ([Extent1].[ParentId] IS NULL)
+2015-08-13 00:04:57	INFO:	
+
+2015-08-13 00:04:57	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:57	INFO:	-- Executing at 2015-08-13 00:04:57 +02:00
+
+2015-08-13 00:04:57	INFO:	-- Completed in 6 ms with result: SqlDataReader
+
+2015-08-13 00:04:57	INFO:	
+
+2015-08-13 00:04:57	INFO:	Closed connection at 2015-08-13 00:04:57 +02:00
+
+2015-08-13 00:04:57	INFO:	Opened connection at 2015-08-13 00:04:57 +02:00
+
+2015-08-13 00:04:57	INFO:	SELECT 
+    [Extent1].[GameVersionTreeId] AS [GameVersionTreeId], 
+    [Extent1].[Id] AS [Id], 
+    [Extent1].[ParentId] AS [ParentId], 
+    [Extent1].[Name] AS [Name], 
+    [Extent1].[Level] AS [Level], 
+    [Extent1].[GameVersionId] AS [GameVersionId], 
+    [Extent1].[HasChildren] AS [HasChildren], 
+    [Extent1].[ItemsCount] AS [ItemsCount], 
+    [Extent1].[ItemsCountWithChildren] AS [ItemsCountWithChildren]
+    FROM [dbo].[GameVersionTrees] AS [Extent1]
+    WHERE [Extent1].[GameVersionId] = @p__linq__0
+2015-08-13 00:04:57	INFO:	
+
+2015-08-13 00:04:57	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:57	INFO:	-- Executing at 2015-08-13 00:04:57 +02:00
+
+2015-08-13 00:04:57	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:57	INFO:	
+
+2015-08-13 00:04:57	INFO:	Closed connection at 2015-08-13 00:04:57 +02:00
+
+2015-08-13 00:04:59	INFO:	Opened connection at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	SELECT 
+    [Limit1].[TranslationId] AS [TranslationId], 
+    [Limit1].[GameVersionId] AS [GameVersionId], 
+    [Limit1].[TranslationId1] AS [TranslationId1], 
+    [Limit1].[GameVersionTreeId] AS [GameVersionTreeId], 
+    [Limit1].[UserRole] AS [UserRole], 
+    [Limit1].[LanguageId] AS [LanguageId]
+    FROM ( SELECT TOP (1) 
+        [Filter1].[TranslationId1] AS [TranslationId], 
+        [Filter1].[UserRole] AS [UserRole], 
+        [Filter1].[TranslationId2] AS [TranslationId1], 
+        [Filter1].[LanguageId] AS [LanguageId], 
+        [Extent3].[GameVersionTreeId] AS [GameVersionTreeId], 
+        [Extent3].[GameVersionId] AS [GameVersionId]
+        FROM   (SELECT [Extent1].[TranslationId] AS [TranslationId1], [Extent1].[ApplicationUserId] AS [ApplicationUserId], [Extent1].[UserRole] AS [UserRole], [Extent2].[TranslationId] AS [TranslationId2], [Extent2].[Id] AS [Id1], [Extent2].[GameVersionId] AS [GameVersionId], [Extent2].[LanguageId] AS [LanguageId]
+            FROM  [dbo].[TranslationUsers] AS [Extent1]
+            INNER JOIN [dbo].[Translations] AS [Extent2] ON [Extent1].[TranslationId] = [Extent2].[TranslationId]
+            WHERE ([Extent1].[IsAccept] = 1) AND ([Extent2].[IsActive] = 1) AND ([Extent1].[IsActive] = 1) ) AS [Filter1]
+        INNER JOIN [dbo].[GameVersionTrees] AS [Extent3] ON [Filter1].[GameVersionId] = [Extent3].[GameVersionId]
+        WHERE ([Extent3].[Id] = @p__linq__0) AND ([Filter1].[ApplicationUserId] = @p__linq__1) AND ([Filter1].[Id1] = @p__linq__2)
+    )  AS [Limit1]
+2015-08-13 00:04:59	INFO:	
+
+2015-08-13 00:04:59	INFO:	-- p__linq__0: 'be17e95d-a7e4-40f9-8374-6cb0112d27a0' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:59	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:59	INFO:	-- p__linq__2: '9a29dcfc-5150-4ee7-a7d4-ef985147131d' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:59	INFO:	-- Executing at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:59	INFO:	
+
+2015-08-13 00:04:59	INFO:	Closed connection at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	Opened connection at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	SELECT 
+    [Extent1].[GamePhraseId] AS [GamePhraseId], 
+    [Extent2].[Id] AS [Id], 
+    [Extent2].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Extent1].[Phrase] AS [Phrase], 
+    [Extent1].[OriginalTranslation] AS [OriginalTranslation], 
+    [Extent2].[OriginalTranslation] AS [OriginalTranslation1], 
+    [Extent1].[SituationDescription] AS [SituationDescription], 
+    [Extent2].[SituationDescription] AS [SituationDescription1]
+    FROM  [dbo].[GamePhrases] AS [Extent1]
+    INNER JOIN [dbo].[GamePhraseVersions] AS [Extent2] ON [Extent1].[GamePhraseId] = [Extent2].[GamePhraseId]
+    WHERE ([Extent2].[GameVersionId] = @p__linq__0) AND ([Extent2].[GameVersionTreeId_GameVersionTreeId] = @p__linq__1)
+2015-08-13 00:04:59	INFO:	
+
+2015-08-13 00:04:59	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:59	INFO:	-- p__linq__1: '16154' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:59	INFO:	-- Executing at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	-- Completed in 1 ms with result: SqlDataReader
+
+2015-08-13 00:04:59	INFO:	
+
+2015-08-13 00:04:59	INFO:	Closed connection at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	Opened connection at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	SELECT 
+    [Extent1].[TranslationId] AS [TranslationId], 
+    [Extent1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Extent1].[Value] AS [Value], 
+    [Extent1].[Status] AS [Status], 
+    [Extent1].[ApplicationUserId] AS [ApplicationUserId], 
+    [Extent1].[Id] AS [Id]
+    FROM [dbo].[TranslationPhrases] AS [Extent1]
+    WHERE ([Extent1].[TranslationId] = @p__linq__0) AND (([Extent1].[ApplicationUserId] = @p__linq__1) OR (([Extent1].[ApplicationUserId] IS NULL) AND (@p__linq__1 IS NULL)) OR (([Extent1].[ApplicationUserId] IS NULL) AND (2 =  CAST( [Extent1].[Status] AS int)))) AND ([Extent1].[GamePhraseVersionId] IN (32957, 32958, 32959, 32960, 32961, 32962, 32963, 32964, 32965, 32966, 32967, 32968, 32969, 32970, 32971, 32972, 32973, 32974, 32975, 32976, 32977, 32978, 32979, 32980, 32981, 32982, 32983, 32984, 32985, 32986, 32987, 32988, 32989, 32990, 32991, 32992, 32993, 32994, 32995, 32996, 32997, 32998, 32999, 33000, 33001, 33002, 33003, 33004, 33005, 33006, 33007, 33008, 33009, 33010, 33011, 33012, 33013, 33014, 33015, 33016, 33017, 33018, 33019))
+2015-08-13 00:04:59	INFO:	
+
+2015-08-13 00:04:59	INFO:	-- p__linq__0: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:59	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:59	INFO:	-- Executing at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	-- Completed in 4 ms with result: SqlDataReader
+
+2015-08-13 00:04:59	INFO:	
+
+2015-08-13 00:04:59	INFO:	Closed connection at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	Opened connection at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	SELECT 
+    [Project1].[TranslationPhraseId] AS [TranslationPhraseId], 
+    [Project1].[GamePhraseVersionId] AS [GamePhraseVersionId], 
+    [Project1].[ApplicationUserId] AS [ApplicationUserId], 
+    [Project1].[Value] AS [Value], 
+    [Project1].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount], 
+    [Project1].[UpdateDate] AS [UpdateDate], 
+    [Project1].[UserName] AS [UserName], 
+    [Project1].[Id] AS [Id]
+    FROM ( SELECT 
+        [Filter1].[TranslationPhraseId] AS [TranslationPhraseId], 
+        [Filter1].[Id1] AS [Id], 
+        [Filter1].[GamePhraseVersionId1] AS [GamePhraseVersionId], 
+        [Filter1].[ApplicationUserId1] AS [ApplicationUserId], 
+        [Filter1].[UpdateDate1] AS [UpdateDate], 
+        [Filter1].[Value] AS [Value], 
+        [Filter1].[Statistics_PhraseTranslatedCount1] AS [Statistics_PhraseTranslatedCount], 
+        [Filter1].[UserName] AS [UserName]
+        FROM ( SELECT [Extent1].[TranslationPhraseId] AS [TranslationPhraseId], [Extent1].[Id] AS [Id1], [Extent1].[GamePhraseVersionId] AS [GamePhraseVersionId1], [Extent1].[ApplicationUserId] AS [ApplicationUserId1], [Extent1].[UpdateDate] AS [UpdateDate1], [Extent1].[Value] AS [Value], [Extent2].[TranslationId] AS [TranslationId1], [Extent2].[LanguageId] AS [LanguageId], [Extent4].[Statistics_PhraseTranslatedCount] AS [Statistics_PhraseTranslatedCount1], [Extent5].[UserName] AS [UserName], [Extent6].[Id] AS [Id2]
+            FROM      [dbo].[TranslationPhrases] AS [Extent1]
+            INNER JOIN [dbo].[Translations] AS [Extent2] ON [Extent1].[TranslationId] = [Extent2].[TranslationId]
+            INNER JOIN [dbo].[GamePhraseVersions] AS [Extent3] ON [Extent1].[GamePhraseVersionId] = [Extent3].[GamePhraseVersionId]
+            INNER JOIN [dbo].[TranslationUsers] AS [Extent4] ON ([Extent1].[TranslationId] = [Extent4].[TranslationId]) AND ([Extent1].[ApplicationUserId] = [Extent4].[ApplicationUserId])
+            INNER JOIN [dbo].[ApplicationUsers] AS [Extent5] ON [Extent1].[ApplicationUserId] = [Extent5].[Id]
+            LEFT OUTER JOIN [dbo].[GameVersionTrees] AS [Extent6] ON [Extent3].[GameVersionTreeId_GameVersionTreeId] = [Extent6].[GameVersionTreeId]
+            WHERE (1 =  CAST( [Extent1].[Status] AS int)) AND ([Extent4].[IsAccept] = 1) AND ([Extent4].[IsActive] = 1)
+        )  AS [Filter1]
+        WHERE ([Filter1].[Id2] = @p__linq__0) AND ( NOT (([Filter1].[ApplicationUserId1] = @p__linq__1) AND ((CASE WHEN ([Filter1].[ApplicationUserId1] IS NULL) THEN cast(1 as bit) ELSE cast(0 as bit) END) = (CASE WHEN (@p__linq__1 IS NULL) THEN cast(1 as bit) ELSE cast(0 as bit) END)))) AND ([Filter1].[TranslationId1] = @p__linq__2) AND ([Filter1].[LanguageId] = @p__linq__3)
+    )  AS [Project1]
+    ORDER BY [Project1].[Statistics_PhraseTranslatedCount] DESC
+2015-08-13 00:04:59	INFO:	
+
+2015-08-13 00:04:59	INFO:	-- p__linq__0: 'be17e95d-a7e4-40f9-8374-6cb0112d27a0' (Type = Guid, IsNullable = false)
+
+2015-08-13 00:04:59	INFO:	-- p__linq__1: '8eac3f53-de88-42e1-b533-7cda8634b9cc' (Type = String, Size = 4000)
+
+2015-08-13 00:04:59	INFO:	-- p__linq__2: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:59	INFO:	-- p__linq__3: '1' (Type = Int32, IsNullable = false)
+
+2015-08-13 00:04:59	INFO:	-- Executing at 2015-08-13 00:04:59 +02:00
+
+2015-08-13 00:04:59	INFO:	-- Completed in 0 ms with result: SqlDataReader
+
+2015-08-13 00:04:59	INFO:	
+
+2015-08-13 00:04:59	INFO:	Closed connection at 2015-08-13 00:04:59 +02:00
+
