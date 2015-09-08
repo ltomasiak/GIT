@@ -8,32 +8,17 @@ WHERE t.TABLE_SCHEMA + '.' + t.TABLE_NAME IN ('dbo.Games','dbo.ApplicationUsers'
 2015-08-13 00:04:29	INFO:	
 
 2015-08-13 00:04:29	INFO:	-- Executing at 2015-08-13 00:04:29 +02:00
+\
 
-2015-08-13 00:04:29	INFO:	-- Completed in 2 ms with result: 18
 
-2015-08-13 00:04:29	INFO:	
+dasdasdas
 
-2015-08-13 00:04:29	INFO:	Closed connection at 2015-08-13 00:04:29 +02:00
-
-2015-08-13 00:04:30	INFO:	Opened connection at 2015-08-13 00:04:30 +02:00
-
-2015-08-13 00:04:31	INFO:	SELECT 
-    [GroupBy1].[A1] AS [C1]
-    FROM ( SELECT 
-        COUNT(1) AS [A1]
-        FROM [dbo].[__MigrationHistory] AS [Extent1]
-        WHERE [Extent1].[ContextKey] = @p__linq__0
-    )  AS [GroupBy1]
-2015-08-13 00:04:31	INFO:	
-
-2015-08-13 00:04:31	INFO:	-- p__linq__0: 'Translator.Models.ApplicationDbContext' (Type = String, Size = 4000)
-
-2015-08-13 00:04:31	INFO:	-- Executing at 2015-08-13 00:04:31 +02:00
-
+dasdas
 2015-08-13 00:04:31	INFO:	-- Completed in 0 ms with result: SqlDataReader
 
 2015-08-13 00:04:31	INFO:	
 
+dasdasd
 2015-08-13 00:04:31	INFO:	Closed connection at 2015-08-13 00:04:31 +02:00
 
 2015-08-13 00:04:31	INFO:	Opened connection at 2015-08-13 00:04:31 +02:00
